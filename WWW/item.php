@@ -21,7 +21,8 @@
 	margin-bottom:10px;
 }
 .view .img-responsive{
-	 max-height:280px;
+	 height:280px;
+	 width:auto;
 	 overflow: hidden;
 	 margin-top:13px;}
 </style>
@@ -95,7 +96,7 @@ function w3_close() {
 				<li><a href="#">men</a></li>
 				<li><a href="#">women</a></li>
 				<li><a href="#">kids</a></li>
-				<li><a href="#">sale</a></li>
+				<li><a href="item.php">all</a></li>
 			</ul>	
 		</div>
 		<form method="post">
@@ -167,80 +168,80 @@ function w3_close() {
 				</div>
 				<div class="w3-col l6 m6 s5" style="margin: auto">
 		    	  	<ul class="megamenu skyblue">
-					<li class="active grid"><a class="color1" href="item.php?sex=1">Men</a>
+					<li class="active grid"><a class="color1" href="item.php?sex=1&">Men</a>
 					<div class="megapanel">
 						<div class="row">
 							<div class="col3">
 								<div class="h_nav">
 									<ul>
-										<li><a href="item.php?sex=1&cat=accessory">Accessories</a></li>
-										<li><a href="item.php?sex=1&cat=bag">Bags</a></li>
-										<li><a href="item.php?sex=1">Caps & Hats</a></li>
-										<li><a href="item.php?sex=1">Hoodies & Sweatshirts</a></li>
-										<li><a href="item.php?sex=1">Jackets & Coats</a></li>
-										<li><a href="item.php?sex=1">Jeans</a></li>
-										<li><a href="item.php?sex=1">Jewellery</a></li>
-										<li><a href="item.php?sex=1">Jumpers & Cardigans</a></li>
-										<li><a href="item.php?sex=1">Leather Jackets</a></liÖ>
-										<li><a href="item.php?sex=1">Long Sleeve T-Shirts</a></li>
-										<li><a href="item.php?sex=1">Loungewear</a></li>
+										<li><a href="item.php?sex=1&cat=accessory&">Accessories</a></li>
+										<li><a href="item.php?sex=1&cat=bag&">Bags</a></li>
+										<li><a href="item.php?sex=1&">Caps & Hats</a></li>
+										<li><a href="item.php?sex=1&">Hoodies & Sweatshirts</a></li>
+										<li><a href="item.php?sex=1&">Jackets & Coats</a></li>
+										<li><a href="item.php?sex=1&">Jeans</a></li>
+										<li><a href="item.php?sex=1&">Jewellery</a></li>
+										<li><a href="item.php?sex=1&">Jumpers & Cardigans</a></li>
+										<li><a href="item.php?sex=1&">Leather Jackets</a></liÖ>
+										<li><a href="item.php?sex=1&">Long Sleeve T-Shirts</a></li>
+										<li><a href="item.php?sex=1&">Loungewear</a></li>
 									</ul>	
 								</div>							
 							</div>
 							<div class="col3">
 								<div class="h_nav">
 									<ul>
-										<li><a href="item.php?sex=1">Shirts</a></li>
-										<li><a href="item.php?sex=1">Shoes, Boots & Trainers</a></li>
-										<li><a href="item.php?sex=1">Shorts</a></li>
-										<li><a href="item.php?sex=1">Suits & Blazers</a></li>
-										<li><a href="item.php?sex=1">Sunglasses</a></li>
-										<li><a href="item.php?sex=1">Sweatpants</a></li>
-										<li><a href="item.php?sex=1">Swimwear</a></li>
-										<li><a href="item.php?sex=1">Trousers & Chinos</a></li>
-										<li><a href="item.php?sex=1">T-Shirts</a></li>
-										<li><a href="item.php?sex=1">Underwear & Socks</a></li>
-										<li><a href="item.php?sex=1">Vests</a></li>
+										<li><a href="item.php?sex=1&">Shirts</a></li>
+										<li><a href="item.php?sex=1&">Shoes, Boots & Trainers</a></li>
+										<li><a href="item.php?sex=1&">Shorts</a></li>
+										<li><a href="item.php?sex=1&">Suits & Blazers</a></li>
+										<li><a href="item.php?sex=1&">Sunglasses</a></li>
+										<li><a href="item.php?sex=1&">Sweatpants</a></li>
+										<li><a href="item.php?sex=1&">Swimwear</a></li>
+										<li><a href="item.php?sex=1&">Trousers & Chinos</a></li>
+										<li><a href="item.php?sex=1&">T-Shirts</a></li>
+										<li><a href="item.php?sex=1&">Underwear & Socks</a></li>
+										<li><a href="item.php?sex=1&">Vests</a></li>
 									</ul>	
 								</div>							
 							</div>
 						</div>
 					</div>
 					</li>
-				   	<li class="active action grid"><a class="color2" href="item.php?sex=0">Women</a>
+				   	<li class="active action grid"><a class="color2" href="item.php?sex=0&">Women</a>
 					<div class="megapanel">
 						<div class="row">
 							<div class="col3">
 								<div class="h_nav">
 									<ul>
-										<li><a href="item.php?sex=0">Accessories</a></li>
-										<li><a href="item.php?sex=0">Bags</a></li>
-										<li><a href="item.php?sex=0">Caps & Hats</a></li>
-										<li><a href="item.php?sex=0">Hoodies & Sweatshirts</a></li>
-										<li><a href="item.php?sex=0">Jackets & Coats</a></li>
-										<li><a href="item.php?sex=0">Jeans</a></li>
-										<li><a href="item.php?sex=0">Jewellery</a></li>
-										<li><a href="item.php?sex=0">Jumpers & Cardigans</a></li>
-										<li><a href="item.php?sex=0">Leather Jackets</a></li>
-										<li><a href="item.php?sex=0">Long Sleeve T-Shirts</a></li>
-										<li><a href="item.php?sex=0">Loungewear</a></li>
+										<li><a href="item.php?sex=0&">Accessories</a></li>
+										<li><a href="item.php?sex=0&">Bags</a></li>
+										<li><a href="item.php?sex=0&">Caps & Hats</a></li>
+										<li><a href="item.php?sex=0&">Hoodies & Sweatshirts</a></li>
+										<li><a href="item.php?sex=0&">Jackets & Coats</a></li>
+										<li><a href="item.php?sex=0&">Jeans</a></li>
+										<li><a href="item.php?sex=0&">Jewellery</a></li>
+										<li><a href="item.php?sex=0&">Jumpers & Cardigans</a></li>
+										<li><a href="item.php?sex=0&">Leather Jackets</a></li>
+										<li><a href="item.php?sex=0&">Long Sleeve T-Shirts</a></li>
+										<li><a href="item.php?sex=0&">Loungewear</a></li>
 									</ul>	
 								</div>							
 							</div>
 							<div class="col3">
 								<div class="h_nav">
 									<ul>
-										<li><a href="item.php?sex=0">Shirts</a></li>
-										<li><a href="item.php?sex=0">Shoes, Boots & Trainers</a></li>
-										<li><a href="item.php?sex=0">Shorts</a></li>
-										<li><a href="item.php?sex=0">Suits & Blazers</a></li>
-										<li><a href="item.php?sex=0">Sunglasses</a></li>
-										<li><a href="item.php?sex=0">Sweatpants</a></li>
-										<li><a href="item.php?sex=0">Swimwear</a></li>
-										<li><a href="item.php?sex=0">Trousers & Chinos</a></li>
-										<li><a href="item.php?sex=0">T-Shirts</a></li>
-										<li><a href="item.php?sex=0">Underwear & Socks</a></li>
-										<li><a href="item.php?sex=0">Vests</a></li>
+										<li><a href="item.php?sex=0&">Shirts</a></li>
+										<li><a href="item.php?sex=0&">Shoes, Boots & Trainers</a></li>
+										<li><a href="item.php?sex=0&">Shorts</a></li>
+										<li><a href="item.php?sex=0&">Suits & Blazers</a></li>
+										<li><a href="item.php?sex=0&">Sunglasses</a></li>
+										<li><a href="item.php?sex=0&">Sweatpants</a></li>
+										<li><a href="item.php?sex=0&">Swimwear</a></li>
+										<li><a href="item.php?sex=0&">Trousers & Chinos</a></li>
+										<li><a href="item.php?sex=0&">T-Shirts</a></li>
+										<li><a href="item.php?sex=0&">Underwear & Socks</a></li>
+										<li><a href="item.php?sex=0&">Vests</a></li>
 									</ul>	
 								</div>							
 							</div>
@@ -270,14 +271,15 @@ function w3_close() {
 <!-- sort -->
 <div class="container women_main col-md-9 w_content women w3-pagepadding">
 	<a href="#"><h4>Total - <span><?php echo count($id);   ?> items</span> </h4></a>
-	<?php $thisurl='http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'];$thisurl=explode("&order=",$thisurl)[0];?>
+	<?php $thisurl='http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'];$thisurl1=explode("order=",$thisurl)[0];
+	$thisurl2=explode("page=",$thisurl)[0];?>
 	<ul class="w_nav">
 		<li >Sort : </li>
-		<li><a class="active" href=<?php echo $thisurl."&order=id" ?>>popular</a></li> |
-		<li><a href=<?php echo $thisurl."&order=date" ?>>new </a></li> |
+		<li><a class="active" href=<?php echo $thisurl1."order=id&" ?>>popular</a></li> |
+		<li><a href=<?php echo $thisurl1."order=date&" ?>>new </a></li> |
 		<li><a href="#">discount</a></li> |
-		<li><a href=<?php echo $thisurl."&order=price"  ?>>price: Low High </a></li> |
-		<li><a href=<?php echo $thisurl."&order=priced" ?>>price: High Low </a></li> 
+		<li><a href=<?php echo $thisurl1."order=price&"  ?>>price: Low High </a></li> |
+		<li><a href=<?php echo $thisurl1."order=priced&" ?>>price: High Low </a></li> 
 	</ul>
 </div>
 
@@ -290,196 +292,41 @@ function w3_close() {
 <div class="container">
 	<div class="col-md-9 w_content">
 		<!-- grids_of_4 -->
-		<div class="grids_of_4">
+		<?php  
+		$x=0;
+		for($x;$x<count($id);$x++){
+		if(($x+1)%4==1){echo '<div class="grids_of_4">';}
+		echo'
 		  <div class="grid1_of_4">
-				<div class="content_box"><a href="single.html">
+				<div class="content_box"><a href="single.php?id='.$id[$x].'">
 					<div class="view view-fifth">
-						<img <?php echo "src='images/".$file_names[0]."'"?>  class='img-responsive' alt=''/>
+						<img src="images/'.$file_names[$x].'"  class="img-responsive" alt=""/>
 				   	   	<div class="mask1">
 	                        <div class="info"> </div>
 			            </div>
 					</div>
 					</a>
-				    <h5><a href="details.html"><?php echo $product_names[0]?></a></h5>
-				    <h6><?php echo $intro[0]?><h6>
-					<?php echo $price[0]?>
+				    <h5><a href="details.html">'.$product_names[$x].'</a></h5>
+				    <h6>'.$intro[$x].'<h6>
+					'.$price[$x].'
 			   	</div>
 			</div>
-			<div class="grid1_of_4">
-				<div class="content_box"><a href="single.html">
-			   	  <div class="view view-fifth">
-			   	   	 <img <?php echo "src='images/".$file_names[1]."'"?>  class='img-responsive' alt=''/>
-				   	   <div class="mask1">
-	                        <div class="info"> </div>
-			            </div>
-				   	  </a>
-				   </div>
-				     <h5><a href="details.html"><?php echo $product_names[1]?></a></h5>
-				    <h6><?php echo $intro[1]?><h6>
-				    <?php echo $price[1]?>
-			   	</div>
-			</div>
-			<div class="grid1_of_4">
-				<div class="content_box"><a href="single.html">
-			   	  <div class="view view-fifth">
-			   	   	 <img <?php echo "src='images/".$file_names[2]."'"?>  class='img-responsive' alt=''/>
-				   	   	<div class="mask1">
-	                        <div class="info"> </div>
-			            </div>
-				   	  </a>
-				   </div>
-				    <h5><a href="details.html"><?php echo $product_names[2]?></a></h5>
-				    <h6><?php echo $intro[2]?><h6>
-				    <?php echo $price[2]?>
-			   	</div>
-			</div>
-			<div class="grid1_of_4">
-				<div class="content_box"><a href="single.html">
-			   	  <div class="view view-fifth">
-			   	   	 <img <?php echo "src='images/".$file_names[3]."'"?>  class='img-responsive' alt=''/>
-				   	   	<div class="mask1">
-	                        <div class="info"> </div>
-			            </div>
-				   	  </a>
-				   </div>
-				    <h5><a href="details.html"><?php echo $product_names[3]?></a></h5>
-				    <h6><?php echo $intro[3]?><h6>
-				    <?php echo $price[3]?>
-			   	</div>
-			</div>
-		</div>
+		';
+		if(($x+1)%4==0){echo '</div >';}}
+		if($x%4!=0){echo '</div >';}
+		?>
+		
 
-        
-		<div class="grids_of_4">
-		  <div class="grid1_of_4">
-				<div class="content_box"><a href="single.html">
-			   	  <div class="view view-fifth">
-			   	   	 <img <?php echo "src='images/".$file_names[4]."'"?>  class='img-responsive' alt=''/>
-				   	   	<div class="mask1">
-	                        <div class="info"> </div>
-			            </div>
-				   	  </a>
-				   </div>
-				    <h5><a href="details.html"><?php echo $product_names[4]?></a></h5>
-				    <h6><?php echo $intro[4]?><h6>
-				    <?php echo $price[4]?>
-			   	</div>
-			</div>
-			<div class="grid1_of_4">
-				<div class="content_box"><a href="single.html">
-			   	  <div class="view view-fifth">
-			   	   	<img <?php echo "src='images/".$file_names[5]."'"?>  class='img-responsive' alt=''/>
-				   	   <div class="mask1">
-	                        <div class="info"> </div>
-			            </div>
-				   	  </a>
-				   </div>
-				     <h5><a href="details.html"><?php echo $product_names[5]?></a></h5>
-				    <h6><?php echo $intro[5]?><h6>
-				    <?php echo $price[5]?>
-			   	</div>
-			</div>
-			<div class="grid1_of_4">
-				<div class="content_box"><a href="single.html">
-			   	  <div class="view view-fifth">
-			   	   	 <img <?php echo "src='images/".$file_names[6]."'"?>  class='img-responsive' alt=''/>
-				   	   	<div class="mask1">
-	                        <div class="info"> </div>
-			            </div>
-				   	  </a>
-				   </div>
-				     <h5><a href="details.html"><?php echo $product_names[6]?></a></h5>
-				    <h6><?php echo $intro[6]?><h6>
-				    <?php echo $price[6]?>
-			   	</div>
-			</div>
-			<div class="grid1_of_4">
-				<div class="content_box"><a href="single.html">
-			   	  <div class="view view-fifth">
-			   	   	 <img <?php echo "src='images/".$file_names[7]."'"?>  class='img-responsive' alt=''/>
-				   	   	<div class="mask1">
-	                        <div class="info"> </div>
-			            </div>
-				   	  </a>
-				   </div>
-				    <h5><a href="details.html"><?php echo $product_names[7]?></a></h5>
-				    <h6><?php echo $intro[7]?><h6>
-				    <?php echo $price[7]?>
-			   	</div>
-			</div>
-		</div>
-
-		<!-- row3 -->
-		<div class="grids_of_4">
-		  <div class="grid1_of_4">
-				<div class="content_box"><a href="single.html">
-			   	  <div class="view view-fifth">
-			   	   	<img <?php echo "src='images/".$file_names[8]."'"?>  class='img-responsive' alt=''/>
-				   	   	<div class="mask1">
-	                        <div class="info"> </div>
-			            </div>
-				   	  </a>
-				   </div>
-				     <h5><a href="details.html"><?php echo $product_names[8]?></a></h5>
-				    <h6><?php echo $intro[8]?><h6>
-				    <?php echo $price[8]?>
-			   	</div>
-			</div>
-			<div class="grid1_of_4">
-				<div class="content_box"><a href="single.html">
-			   	  <div class="view view-fifth">
-			   	   	<img <?php echo "src='images/".$file_names[9]."'"?>  class='img-responsive' alt=''/>
-				   	   	<div class="mask1">
-	                        <div class="info"> </div>
-			            </div>
-				   	  </a>
-				   </div>
-				     <h5><a href="details.html"><?php echo $product_names[9]?></a></h5>
-				    <h6><?php echo $intro[9]?><h6>
-				    <?php echo $price[9]?>
-			   	</div>
-			</div>
-			<div class="grid1_of_4">
-				<div class="content_box"><a href="single.html">
-			   	  <div class="view view-fifth">
-			   	   	<img <?php echo "src='images/".$file_names[10]."'"?>  class='img-responsive' alt=''/>
-				   	   	<div class="mask1">
-	                        <div class="info"> </div>
-			            </div>
-				   	  </a>
-				   </div>
-				    <h5><a href="details.html"><?php echo $product_names[10]?></a></h5>
-				    <h6><?php echo $intro[10]?><h6>
-				    <?php echo $price[10]?>
-			   	</div>
-			</div>
-			<div class="grid1_of_4">
-				<div class="content_box"><a href="single.html">
-			   	  <div class="view view-fifth">
-			   	  <img <?php echo "src='images/".$file_names[11]."'"?>  class='img-responsive' alt=''/>
-				   	   	<div class="mask1">
-	                        <div class="info"> </div>
-			            </div>
-				   	  </a>
-				   </div>
-				     <h5><a href="details.html"><?php echo $product_names[11]?></a></h5>
-				    <h6><?php echo $intro[11]?><h6>
-				    <?php echo $price[11]?>
-			   	</div>
-			</div>
-		</div>
-		<!-- end grids_of_4 -->
 	</div>
 </div>
-
    <!-- pagination -->
 <div class="w3-bar w3-border-top w3-center">
-  <a href="#" class="w3-button">&laquo;</a>
-  <a href="#" class="w3-button">1</a>
-  <a href="#" class="w3-button">2</a>
-  <a href="#" class="w3-button">3</a>
-  <a href="#" class="w3-button">4</a>
-  <a href="#" class="w3-button">&raquo;</a>
+  <a href=<?php echo $thisurl2."page=1"?> class="w3-button">&laquo;</a>
+  <a href=<?php echo $thisurl2."page=1"?> class="w3-button">1</a>
+  <a href=<?php echo $thisurl2."page=2"?> class="w3-button">2</a>
+  <a href=<?php echo $thisurl2."page=3"?> class="w3-button">3</a>
+  <a href=<?php echo $thisurl2."page=4"?> class="w3-button">4</a>
+  <a href=<?php echo $thisurl2."page=4"?> class="w3-button">&raquo;</a>
 </div>
 
 
@@ -500,7 +347,7 @@ function w3_close() {
 <div class="w3-half w3-container">
 <h3 style="margin-left:10vw">Support</h3>
 			<ul class="list_1 w3-center">
-				<li><a href="#">Terms & Conditions</a></li>
+				<li><a href=<?php echo $thisurl."order=price&"  ?>>Terms & Conditions</a></li>
 				<li><a href="#">FAQ</a></li>
 				<li><a href="#">Payment</a></li>
 				<li><a href="#">Services</a></li>

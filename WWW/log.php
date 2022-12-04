@@ -19,8 +19,8 @@
             
             while($row = $result->fetch_assoc()) {
 				echo '<p> Welcome Back!<br/>' .$row['Firstname'].'  '.$row['Lastname'].'</p>';
-				setcookie("username", $name, time() + 120, "/"); 
-				header("Refresh:3;url='checkout.html'");
+				setcookie("username",$row['Id'], time() + 1200);
+				header("Refresh:3;url='checkout.php'");
             }
         } else {
             echo "Incorrect username or password! <br> Returning to Login page...";

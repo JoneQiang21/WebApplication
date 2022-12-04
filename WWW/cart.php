@@ -6,10 +6,10 @@ if($_GET["del"]=="cookies")
 {
 setcookie("username", "", time()-3600);}
 /*------------------------如果判断已经有cookies存在，则进行自动登录操作----------------------------------*/
-if($_COOKIE["username"]!="")
+if(isset($_COOKIE['username']))
 {
 	echo "<SCRIPT type=text/javascript>
-	window.location = 'checkout.html';
+	window.location = 'checkout.php?uid=".$_COOKIE["username"]."';
 	</SCRIPT>";
 exit();}
 else{

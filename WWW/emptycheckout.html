@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html >
+<!DOCTYPE HTML>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Shopping Cart</title>
-
-<script type="text/javascript" src="js/demo.js"></script>
+<title>Checkout</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 <!-- Custom Theme files -->
 <link href="css/style.css" rel='stylesheet' type='text/css' />
@@ -29,6 +27,8 @@
 	});	  
 });
 </script>
+
+<!-- sidebar-->
 <script>$(document).ready(function(c) {
 	$('.alert-close1').on('click', function(c){
 		$('.message1').fadeOut('slow', function(c){
@@ -40,13 +40,7 @@
 </head>
 
 
-
 <body>
-<div class="header_top">
-		<ul>
-			<a href="login.html"><i style="position:fixed;right:2vw;z-index:3" class="material-icons w3-xxlarge">person</i></a>
-		</ul>
-
 <!-- navigation -->
 	<div class="header_bottom men_border w3-pagepadding" style="background-color: #f7f7f7">
 		<div class="container">
@@ -156,68 +150,16 @@
 	</div>
 </div>
 
-<div class="catbox">
-	<table id="cartTable" style="margin-top:10vh;">
-		<thead >
-			<tr>
-				<th><label class= "checkbox" style="display: inline-block"><input class="check-all check" type="checkbox"/><i style="background-color:#ffffff;top:3px;margin-right:2vw;"> </i>Select All</label></th>
-				<th>Item</th>
-				<th>Unit Price</th>
-				<th style="width:10vw;">Quantity</th>
-				<th>Total Price</th>
-				<th style="width:5vw;">Operation</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td><label class="checkbox"><input class="check-one check" type="checkbox"/><i > </i></label></td>
-				<td class="goods"><img src="images/cart1.jpg" alt=""/><span>Casio/卡西欧 EX-TR350</span></td>
-				<td class="price">5999.88</td>
-				<td class="count"><span class="reduce">-</span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
-				<td class="subtotal">5999.88</td>
-				<td class="operation"><span class="delete">delete</span></td>
-			</tr>
-			<tr>
-				<td><label class="checkbox"><input class="check-one check" type="checkbox"/><i> </i></label></td>
-				<td class="goods"><img src="images/cart2.jpg" alt=""/><span>Canon/佳能 PowerShot SX50 HS</span></td>
-				<td class="price">3888.50</td>
-				<td class="count"><span class="reduce">-</span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
-				<td class="subtotal">3888.50</td>
-				<td class="operation"><span class="delete">delete</span></td>
-			</tr>
-			<tr>
-				<td><label class="checkbox"><input class="check-one check" type="checkbox"/><i> </i></label></td>
-				<td class="goods"><img src="images/cart3.jpg" alt=""/><span>Sony/索尼 DSC-WX300</span></td>
-				<td class="price">1428.50</td>
-				<td class="count"><span class="reduce">-</span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
-				<td class="subtotal">1428.50</td>
-				<td class="operation"><span class="delete">delete</span></td>
-			</tr>
-			
-			<tr>
-				<td><label class="checkbox"><input class="check-one check" type="checkbox"/><i> </i></label></td>
-				<td class="goods"><img src="images/cart4.jpg" alt=""/><span>Fujifilm/富士 instax mini 25</span></td>
-				<td class="price">640.60</td>
-				<td class="count"><span class="reduce">-</span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
-				<td class="subtotal">640.60</td>
-				<td class="operation"><span class="delete">delete</span></td>
-			</tr>
-		</tbody>
-	</table>
-	
-	<div class="foot" id="foot">
-		<label class="fl checkbox select-all" ><input type="checkbox" class="check-all check"/><i style="background-color:#ffffff;top:13px;margin-right:2vw;"></i>&nbsp;select all</label>
-		<a class="fl delete" id="deleteAll" href="javascript:;">delete</a>
-		<div class="fr closing"><input type="submit" value="Checkout"/></div>
-		<div class="fr fttotal">Total：$<span id="priceTotal">0.00</span></div>
-		<div class="fr selected" id="selected"><span id="selectedTotal">0</span> Items selected</div>
 
-	</div>
-
-
+<div class="checkout w3-pagepaddingindex">
+	 <div class="container" style="margin-left:10vw;margin-top:5vh;">
+		<h1 class="title1">Shopping cart is empty</h1>
+		<p class="cart">You have no items in your shopping cart.<br>Click<a href="index.html"> here</a> to continue shopping</p>
+	 </div>
+</div>      
 
 <!-- footer -->
-<div class="w3-container w3-border-top footer" style="margin-top:10vh;">
+<div class="w3-container w3-border-top">
 	<div class="w3-half w3-container w3-center">
 		<h3>Our Stores</h3>
 			<address class="address">
@@ -247,7 +189,7 @@
 </div>
 
    <!-- copyright -->
-<div class="w3-container footer">
+<div class="w3-container">
 	<div class="copy">
     <p>Copyright &copy; 2022.SUN SHUO     All rights reserved.</p>
 	</div>

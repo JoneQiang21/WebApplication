@@ -20,7 +20,9 @@
 		  }
 	$conn->close();
 ?>
-
+	
+	
+	
 <!-- Custom Theme files -->
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <link rel="stylesheet" href="css/w3.css">
@@ -126,80 +128,70 @@ function checkorder(){
 				</div>
 				<div class="w3-col l6 m6 s5" style="margin: auto">
 		    	  	<ul class="megamenu skyblue">
-					<li class="active grid"><a class="color1" href="item.php?sex=1">Men</a>
+					<li class="active grid"><a class="color1" href="item.php?sex=1&">Men</a>
 					<div class="megapanel">
 						<div class="row">
 							<div class="col3">
 								<div class="h_nav">
 									<ul>
-										<li><a href="item.php?sex=1&cat=accessory">Accessories</a></li>
-										<li><a href="item.php?sex=1&cat=bag">Bags</a></li>
-										<li><a href="item.php?sex=1">Caps & Hats</a></li>
-										<li><a href="item.php?sex=1">Hoodies & Sweatshirts</a></li>
-										<li><a href="item.php?sex=1">Jackets & Coats</a></li>
-										<li><a href="item.php?sex=1">Jeans</a></li>
-										<li><a href="item.php?sex=1">Jewellery</a></li>
-										<li><a href="item.php?sex=1">Jumpers & Cardigans</a></li>
-										<li><a href="item.php?sex=1">Leather Jackets</a></liÖ>
-										<li><a href="item.php?sex=1">Long Sleeve T-Shirts</a></li>
-										<li><a href="item.php?sex=1">Loungewear</a></li>
+										<li><a href="item.php?sex=1&cat=accessory&">Accessories</a></li>
+										<li><a href="item.php?sex=1&cat=bag&">Bags</a></li>
+										<li><a href="item.php?sex=1&cat=hat&">Caps & Hats</a></li>
+										<li><a href="item.php?sex=1&cat=hoodie&">Hoodies & Sweatshirts</a></li>
+										<li><a href="item.php?sex=1&cat=jacket&">Jackets & Coats</a></li>
+										<li><a href="item.php?sex=1&cat=jeans&">Jeans</a></li>
+										<li><a href="item.php?sex=1&cat=loungewear&">Loungewear</a></li>
+										<li><a href="item.php?sex=1&cat=shirt&">Shirts</a></li>
 									</ul>	
 								</div>							
 							</div>
 							<div class="col3">
 								<div class="h_nav">
 									<ul>
-										<li><a href="item.php?sex=1">Shirts</a></li>
-										<li><a href="item.php?sex=1">Shoes, Boots & Trainers</a></li>
-										<li><a href="item.php?sex=1">Shorts</a></li>
-										<li><a href="item.php?sex=1">Suits & Blazers</a></li>
-										<li><a href="item.php?sex=1">Sunglasses</a></li>
-										<li><a href="item.php?sex=1">Sweatpants</a></li>
-										<li><a href="item.php?sex=1">Swimwear</a></li>
-										<li><a href="item.php?sex=1">Trousers & Chinos</a></li>
-										<li><a href="item.php?sex=1">T-Shirts</a></li>
-										<li><a href="item.php?sex=1">Underwear & Socks</a></li>
-										<li><a href="item.php?sex=1">Vests</a></li>
+									
+										<li><a href="item.php?sex=1&cat=shoes&">Shoes, Boots & Trainers</a></li>
+										<li><a href="item.php?sex=1&cat=shorts&">Shorts</a></li>
+										<li><a href="item.php?sex=1&cat=suits&">Suits & Blazers</a></li>
+										<li><a href="item.php?sex=1&cat=sunglasses&">Sunglasses</a></li>
+										<li><a href="item.php?sex=1&cat=swimwear&">Swimwear</a></li>
+										<li><a href="item.php?sex=1&cat=trousers&">Trousers & Chinos</a></li>
+										<li><a href="item.php?sex=1&cat=tshirt&">T-Shirts</a></li>
+										<li><a href="item.php?sex=1&cat=underwear&">Underwear & Socks</a></li>
 									</ul>	
 								</div>							
 							</div>
 						</div>
 					</div>
 					</li>
-				   	<li class="active action grid"><a class="color2" href="item.php?sex=0">Women</a>
+				   	<li class="active action grid"><a class="color2" href="item.php?sex=0&">Women</a>
 					<div class="megapanel">
 						<div class="row">
 							<div class="col3">
 								<div class="h_nav">
 									<ul>
-										<li><a href="item.php?sex=0">Accessories</a></li>
-										<li><a href="item.php?sex=0">Bags</a></li>
-										<li><a href="item.php?sex=0">Caps & Hats</a></li>
-										<li><a href="item.php?sex=0">Hoodies & Sweatshirts</a></li>
-										<li><a href="item.php?sex=0">Jackets & Coats</a></li>
-										<li><a href="item.php?sex=0">Jeans</a></li>
-										<li><a href="item.php?sex=0">Jewellery</a></li>
-										<li><a href="item.php?sex=0">Jumpers & Cardigans</a></li>
-										<li><a href="item.php?sex=0">Leather Jackets</a></li>
-										<li><a href="item.php?sex=0">Long Sleeve T-Shirts</a></li>
-										<li><a href="item.php?sex=0">Loungewear</a></li>
-									</ul>	
-								</div>							
-							</div>
-							<div class="col3">
-								<div class="h_nav">
-									<ul>
-										<li><a href="item.php?sex=0">Shirts</a></li>
-										<li><a href="item.php?sex=0">Shoes, Boots & Trainers</a></li>
-										<li><a href="item.php?sex=0">Shorts</a></li>
-										<li><a href="item.php?sex=0">Suits & Blazers</a></li>
-										<li><a href="item.php?sex=0">Sunglasses</a></li>
-										<li><a href="item.php?sex=0">Sweatpants</a></li>
-										<li><a href="item.php?sex=0">Swimwear</a></li>
-										<li><a href="item.php?sex=0">Trousers & Chinos</a></li>
-										<li><a href="item.php?sex=0">T-Shirts</a></li>
-										<li><a href="item.php?sex=0">Underwear & Socks</a></li>
-										<li><a href="item.php?sex=0">Vests</a></li>
+												<li><a href="item.php?sex=0&cat=accessory&">Accessories</a></li>
+												<li><a href="item.php?sex=0&cat=bag&">Bags</a></li>
+												<li><a href="item.php?sex=0&cat=hat&">Caps & Hats</a></li>
+												<li><a href="item.php?sex=0&cat=hoodie&">Hoodies & Sweatshirts</a></li>
+												<li><a href="item.php?sex=0&cat=jacket&">Jackets & Coats</a></li>
+												<li><a href="item.php?sex=0&cat=jeans&">Jeans</a></li>
+												<li><a href="item.php?sex=0&cat=loungewear&">Loungewear</a></li>
+												<li><a href="item.php?sex=0&cat=shirt&">Shirts</a></li>
+											</ul>	
+										</div>							
+									</div>
+									<div class="col3">
+										<div class="h_nav">
+											<ul>
+											
+												<li><a href="item.php?sex=0&cat=shoes&">Shoes, Boots & Trainers</a></li>
+												<li><a href="item.php?sex=0&cat=shorts&">Shorts</a></li>
+												<li><a href="item.php?sex=0&cat=suits&">Suits & Blazers</a></li>
+												<li><a href="item.php?sex=0&cat=sunglasses&">Sunglasses</a></li>
+												<li><a href="item.php?sex=0&cat=swimwear&">Swimwear</a></li>
+												<li><a href="item.php?sex=0&cat=trousers&">Trousers & Chinos</a></li>
+												<li><a href="item.php?sex=0&cat=tshirt&">T-Shirts</a></li>
+												<li><a href="item.php?sex=0&cat=underwear&">Underwear & Socks</a></li>
 									</ul>	
 								</div>							
 							</div>
@@ -235,18 +227,18 @@ function checkorder(){
 								<img class="etalage_thumb_image" <?php echo "src='images/".$file_name."'" ?> />
 								<img class="etalage_source_image"<?php echo "src='images/".$file_name."'" ?>class="img-responsive" title="" />
 						</li>
-						<li>
-							<img class="etalage_thumb_image" src="images/s2.jpg" class="img-responsive" />
-							<img class="etalage_source_image" src="images/s2.jpg" class="img-responsive" title="" />
-						</li>
-						<li>
-							<img class="etalage_thumb_image" src="images/s3.jpg" class="img-responsive"  />
-							<img class="etalage_source_image" src="images/s3.jpg"class="img-responsive"  />
-						</li>
-						<li>
-							<img class="etalage_thumb_image" src="images/s4.jpg" class="img-responsive"  />
-							<img class="etalage_source_image" src="images/s4.jpg"class="img-responsive"  />
-						</li>
+						<?php
+						$thumb_name=explode('.',$file_name)[0];
+						$thumb_format=explode('.',$file_name)[1];
+						for ($a=1;$a>0;$a++){
+							$thumb_file='images/'.$thumb_name.'.'.$a.'.'.$thumb_format;
+							if(file_exists($thumb_file)){
+							echo "
+							<li>
+							<img class='etalage_thumb_image'  src=".$thumb_file." />
+							<img class=' etalage_source_image' src=".$thumb_file."  title='' />
+							</li>
+						";}else{break;}}?>
 					</ul>	
 				</div>
 			</div>
@@ -287,8 +279,8 @@ function checkorder(){
 	<!-- socila icons -->
 	<div class="single_social_top w3-center">   
           	  <ul class="single_social w3-cell-row">
-				  <li class="w3-cell"><a href="#"> <i class="s_fb"> </i> <div class="social_desc w3-left-align">Share<br> on facebook</div><div class="clearfix"> </div></a></li>
-				  <li class="w3-cell"><a href="#"> <i class="s_twt"> </i> <div class="social_desc w3-left-align">Tweet<br> this product</div><div class="clearfix"> </div></a></li>
+				  <li class="w3-cell"><a href="https://www.facebook.com/"> <i class="s_fb"> </i> <div class="social_desc w3-left-align">Share<br> on facebook</div><div class="clearfix"> </div></a></li>
+				  <li class="w3-cell"><a href="https://twitter.com/"> <i class="s_twt"> </i> <div class="social_desc w3-left-align">Tweet<br> this product</div><div class="clearfix"> </div></a></li>
 				  <li class="w3-cell"><a href="#"> <i class="s_google"> </i><div class="social_desc w3-left-align">Google+<br> this product</div><div class="clearfix"> </div></a></li>
 				  <li class="w3-cell last"><a href="#"> <i class="s_email"> </i><div class="social_desc w3-left-align">Email<br> a Friend</div><div class="clearfix"> </div></a></li>
 			  </ul>

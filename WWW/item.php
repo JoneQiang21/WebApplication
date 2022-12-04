@@ -102,41 +102,46 @@ function w3_close() {
 		<form method="post">
 		<h3 style="padding-left:2vw"><i>Filter by</i></h3>
 		<section  class="sky-form" >
-					<h4>catogories</h4>
+					<h4>Style</h4>
 						<div class="w3-sans-serif w3-text-blue-grey" text-transform='capitalize' style="padding: 0 2vw;">
-								<label for="cat1" class="checkbox"><input type="checkbox" name="catogory" id="cat1"><i></i>Sports</label>
-								<label for="cat2" class="checkbox"><input type="checkbox" name="catogory" id="cat2"><i></i>fashion</label>
-								<label for="cat3" class="checkbox"><input type="checkbox" name="catogory" id="cat3"><i></i>households</label>
-								<label for="cat4" class="checkbox"><input type="checkbox" name="catogory" id="cat4"><i></i>decoration</label>
-								<label for="cat5" class="checkbox"><input type="checkbox" name="catogory" id="cat5"><i></i>Bags</label>
-								<label for="cat6" class="checkbox"><input type="checkbox" name="catogory" id="cat6"><i></i>shoes</label>
-								<label for="cat7" class="checkbox"><input type="checkbox" name="catogory" id="cat7"><i></i>clothes</label>
-								<label for="cat8" class="checkbox"><input type="checkbox" name="catogory" id="cat8"><i></i>Jewellery</label>
-								<label for="cat9" class="checkbox"><input type="checkbox" name="catogory" id="cat9"><i></i>belt</label>
-								<label for="cat10" class="checkbox"><input type="checkbox" name="catogory" id="cat10"><i></i>watches</label>
-								<label for="cat11" class="checkbox"><input type="checkbox" name="catogory" id="cat11"><i></i>glasses</label>
-								<label for="cat12" class="checkbox"><input type="checkbox" name="catogory" id="cat12"><i></i>scarfs</label>
-								<label for="cat13" class="checkbox"><input type="checkbox" name="catogory" id="cat13"><i></i>hats</label>
+								<label for="cat1" class="checkbox"><input type="checkbox" name="style" id="cat1"><i></i>Sports</label>
+								<label for="cat2" class="checkbox"><input type="checkbox" name="style" id="cat2"><i></i>fashion</label>
+								<label for="cat3" class="checkbox"><input type="checkbox" name="style" id="cat3"><i></i>households</label>
+								<label for="cat4" class="checkbox"><input type="checkbox" name="style" id="cat4"><i></i>decoration</label>
+								<label for="cat5" class="checkbox"><input type="checkbox" name="style" id="cat5"><i></i>leisure</label>
+								<label for="cat6" class="checkbox"><input type="checkbox" name="style" id="cat6"><i></i>business</label>
+						</div>
+		</section>
+		<section  class="sky-form" >
+					<h4>Type</h4>
+						<div class="w3-sans-serif w3-text-blue-grey" text-transform='capitalize' style="padding: 0 2vw;">
+								<label for="type1" class="checkbox"><input type="checkbox" name="type" id="type1"><i></i>top</label>
+								<label for="type2" class="checkbox"><input type="checkbox" name="type" id="type2"><i></i>bottom</label>
+								<label for="type5" class="checkbox"><input type="checkbox" name="type" id="type3"><i></i>Bags</label>
+								<label for="type6" class="checkbox"><input type="checkbox" name="type" id="type4"><i></i>shoes</label>
+								<label for="type8" class="checkbox"><input type="checkbox" name="type" id="type6"><i></i>Jewellery</label>
+								<label for="type9" class="checkbox"><input type="checkbox" name="type" id="type7"><i></i>belts</label>
+								<label for="type10" class="checkbox"><input type="checkbox" name="type" id="type8"><i></i>watches</label>
+								<label for="type11" class="checkbox"><input type="checkbox" name="type" id="type9"><i></i>glasses</label>
+								<label for="type12" class="checkbox"><input type="checkbox" name="type" id="type10"><i></i>scarfs</label>
+								<label for="type13" class="checkbox"><input type="checkbox" name="type" id="type11"><i></i>hats</label>
 						</div>
 		</section>
 		<section class="sky-form" style="margin-bottom:2px;">
 			<h4>colour</h4>
 			<ul class="w_nav2">
-				<li><label class="colorbox color1" ><input type="checkbox" id="color1" name="colorcheck" value="#1"><i></i></label></li>
-				<li><label class="colorbox color2" ><input type="checkbox" id="color2" name="colorcheck" value="#2"><i></i></label></li>
-				<li><label class="colorbox color3" ><input type="checkbox" id="color3" name="colorcheck" value="#3"><i></i></label></li>
-				<li><label class="colorbox color4" ><input type="checkbox" id="color4" name="colorcheck" value="#4"><i></i></label></li>
-				<li><label class="colorbox color5" ><input type="checkbox" id="color5" name="colorcheck" value="#5"><i></i></label></li>
-				<li><label class="colorbox color6" ><input type="checkbox" id="color6" name="colorcheck" value="#6"><i></i></label></li>
-				<li><label class="colorbox color7" ><input type="checkbox" id="color7" name="colorcheck" value="#7"><i></i></label></li>
-				<li><label class="colorbox color8" ><input type="checkbox" id="color8" name="colorcheck" value="#8"><i></i></label></li>
-				<li><label class="colorbox color9" ><input type="checkbox" id="color8" name="colorcheck" value="#9"><i></i></label></li>
-				<li><label class="colorbox color10" ><input type="checkbox" id="color10" name="colorcheck" value="#10"><i></i></label></li>
-				<li><label class="colorbox color11" ><input type="checkbox" id="color11" name="colorcheck" value="#11"><i></i></label></li>
-				<li><label class="colorbox color12" ><input type="checkbox" id="color12" name="colorcheck" value="#12"><i></i></label></li>
-				<li><label class="colorbox color13" ><input type="checkbox" id="color13" name="colorcheck" value="#13"><i></i></label></li>
-				<li><label class="colorbox color14" ><input type="checkbox" id="color14" name="colorcheck" value="#14"><i></i></label></li>
-				<li><label class="colorbox color15" ><input type="checkbox" id="color15" name="colorcheck" value="#15"><i></i></label></li>
+				<li><label class="colorbox color1" ><input type="checkbox" id="color1" name="colorcheck" value="1"><i></i></label></li>
+				<li><label class="colorbox color2" ><input type="checkbox" id="color2" name="colorcheck" value="2"><i></i></label></li>
+				<li><label class="colorbox color3" ><input type="checkbox" id="color3" name="colorcheck" value="3"><i></i></label></li>
+				<li><label class="colorbox color4" ><input type="checkbox" id="color4" name="colorcheck" value="4"><i></i></label></li>
+				<li><label class="colorbox color5" ><input type="checkbox" id="color5" name="colorcheck" value="5"><i></i></label></li>
+				<li><label class="colorbox color6" ><input type="checkbox" id="color6" name="colorcheck" value="6"><i></i></label></li>
+				<li><label class="colorbox color7" ><input type="checkbox" id="color7" name="colorcheck" value="7"><i></i></label></li>
+				<li><label class="colorbox color9" ><input type="checkbox" id="color9" name="colorcheck" value="9"><i></i></label></li>
+				<li><label class="colorbox color11" ><input type="checkbox" id="color11" name="colorcheck" value="11"><i></i></label></li>
+				<li><label class="colorbox color13" ><input type="checkbox" id="color13" name="colorcheck" value="13"><i></i></label></li>
+				<li><label class="colorbox color14" ><input type="checkbox" id="color14" name="colorcheck" value="14"><i></i></label></li>
+				<li><label class="colorbox color15" ><input type="checkbox" id="color15" name="colorcheck" value="15"><i></i></label></li>
 				<li><label class="colorbox color16"><input type="checkbox" id="color16" name="colorcheck" value="#16"><i></i></label></li>
 			</ul>
 		</section>
@@ -176,32 +181,27 @@ function w3_close() {
 									<ul>
 										<li><a href="item.php?sex=1&cat=accessory&">Accessories</a></li>
 										<li><a href="item.php?sex=1&cat=bag&">Bags</a></li>
-										<li><a href="item.php?sex=1&">Caps & Hats</a></li>
-										<li><a href="item.php?sex=1&">Hoodies & Sweatshirts</a></li>
-										<li><a href="item.php?sex=1&">Jackets & Coats</a></li>
-										<li><a href="item.php?sex=1&">Jeans</a></li>
-										<li><a href="item.php?sex=1&">Jewellery</a></li>
-										<li><a href="item.php?sex=1&">Jumpers & Cardigans</a></li>
-										<li><a href="item.php?sex=1&">Leather Jackets</a></liÖ>
-										<li><a href="item.php?sex=1&">Long Sleeve T-Shirts</a></li>
-										<li><a href="item.php?sex=1&">Loungewear</a></li>
+										<li><a href="item.php?sex=1&cat=hat&">Caps & Hats</a></li>
+										<li><a href="item.php?sex=1&cat=hoodie&">Hoodies & Sweatshirts</a></li>
+										<li><a href="item.php?sex=1&cat=jacket&">Jackets & Coats</a></li>
+										<li><a href="item.php?sex=1&cat=jeans&">Jeans</a></li>
+										<li><a href="item.php?sex=1&cat=loungewear&">Loungewear</a></li>
+										<li><a href="item.php?sex=1&cat=shirt&">Shirts</a></li>
 									</ul>	
 								</div>							
 							</div>
 							<div class="col3">
 								<div class="h_nav">
 									<ul>
-										<li><a href="item.php?sex=1&">Shirts</a></li>
-										<li><a href="item.php?sex=1&">Shoes, Boots & Trainers</a></li>
-										<li><a href="item.php?sex=1&">Shorts</a></li>
-										<li><a href="item.php?sex=1&">Suits & Blazers</a></li>
-										<li><a href="item.php?sex=1&">Sunglasses</a></li>
-										<li><a href="item.php?sex=1&">Sweatpants</a></li>
-										<li><a href="item.php?sex=1&">Swimwear</a></li>
-										<li><a href="item.php?sex=1&">Trousers & Chinos</a></li>
-										<li><a href="item.php?sex=1&">T-Shirts</a></li>
-										<li><a href="item.php?sex=1&">Underwear & Socks</a></li>
-										<li><a href="item.php?sex=1&">Vests</a></li>
+									
+										<li><a href="item.php?sex=1&cat=shoes&">Shoes, Boots & Trainers</a></li>
+										<li><a href="item.php?sex=1&cat=shorts&">Shorts</a></li>
+										<li><a href="item.php?sex=1&cat=suit&">Suits & Blazers</a></li>
+										<li><a href="item.php?sex=1&cat=sunglasses&">Sunglasses</a></li>
+										<li><a href="item.php?sex=1&cat=swimwear&">Swimwear</a></li>
+										<li><a href="item.php?sex=1&cat=trousers&">Trousers & Chinos</a></li>
+										<li><a href="item.php?sex=1&cat=tshirt&">T-Shirts</a></li>
+										<li><a href="item.php?sex=1&cat=underwear&">Underwear & Socks</a></li>
 									</ul>	
 								</div>							
 							</div>
@@ -214,34 +214,30 @@ function w3_close() {
 							<div class="col3">
 								<div class="h_nav">
 									<ul>
-										<li><a href="item.php?sex=0&">Accessories</a></li>
-										<li><a href="item.php?sex=0&">Bags</a></li>
-										<li><a href="item.php?sex=0&">Caps & Hats</a></li>
-										<li><a href="item.php?sex=0&">Hoodies & Sweatshirts</a></li>
-										<li><a href="item.php?sex=0&">Jackets & Coats</a></li>
-										<li><a href="item.php?sex=0&">Jeans</a></li>
-										<li><a href="item.php?sex=0&">Jewellery</a></li>
-										<li><a href="item.php?sex=0&">Jumpers & Cardigans</a></li>
-										<li><a href="item.php?sex=0&">Leather Jackets</a></li>
-										<li><a href="item.php?sex=0&">Long Sleeve T-Shirts</a></li>
-										<li><a href="item.php?sex=0&">Loungewear</a></li>
-									</ul>	
-								</div>							
-							</div>
-							<div class="col3">
-								<div class="h_nav">
-									<ul>
-										<li><a href="item.php?sex=0&">Shirts</a></li>
-										<li><a href="item.php?sex=0&">Shoes, Boots & Trainers</a></li>
-										<li><a href="item.php?sex=0&">Shorts</a></li>
-										<li><a href="item.php?sex=0&">Suits & Blazers</a></li>
-										<li><a href="item.php?sex=0&">Sunglasses</a></li>
-										<li><a href="item.php?sex=0&">Sweatpants</a></li>
-										<li><a href="item.php?sex=0&">Swimwear</a></li>
-										<li><a href="item.php?sex=0&">Trousers & Chinos</a></li>
-										<li><a href="item.php?sex=0&">T-Shirts</a></li>
-										<li><a href="item.php?sex=0&">Underwear & Socks</a></li>
-										<li><a href="item.php?sex=0&">Vests</a></li>
+												<li><a href="item.php?sex=0&cat=accessory&">Accessories</a></li>
+												<li><a href="item.php?sex=0&cat=bag&">Bags</a></li>
+												<li><a href="item.php?sex=0&cat=hat&">Caps & Hats</a></li>
+												<li><a href="item.php?sex=0&cat=dress&">Dresses</a></li>
+												<li><a href="item.php?sex=0&cat=hoodie&">Hoodies & Sweatshirts</a></li>
+												<li><a href="item.php?sex=0&cat=jacket&">Jackets & Coats</a></li>
+												<li><a href="item.php?sex=0&cat=jeans&">Jeans</a></li>
+												<li><a href="item.php?sex=0&cat=loungewear&">Loungewear</a></li>
+												<li><a href="item.php?sex=0&cat=shirt&">Shirts</a></li>
+											</ul>	
+										</div>							
+									</div>
+									<div class="col3">
+										<div class="h_nav">
+											<ul>
+											
+												<li><a href="item.php?sex=0&cat=shoes&">Shoes, Heels & Trainers</a></li>
+												<li><a href="item.php?sex=0&cat=skirt&">Skirts</a></li>
+												<li><a href="item.php?sex=0&cat=suit&">Suits & Blazers</a></li>
+												<li><a href="item.php?sex=0&cat=sunglasses&">Sunglasses</a></li>
+												<li><a href="item.php?sex=0&cat=swimwear&">Swimwear</a></li>
+												<li><a href="item.php?sex=0&cat=trousers&">Trousers & Chinos</a></li>
+												<li><a href="item.php?sex=0&cat=tshirt&">T-Shirts</a></li>
+												<li><a href="item.php?sex=0&cat=underwear&">Underwear & Socks</a></li>
 									</ul>	
 								</div>							
 							</div>
@@ -306,7 +302,7 @@ function w3_close() {
 			            </div>
 					</div>
 					</a>
-				    <h5><a href="details.html">'.$product_names[$x].'</a></h5>
+				    <h5><a href="single.php?id='.$id[$x].'">'.$product_names[$x].'</a></h5>
 				    <h6>'.$intro[$x].'<h6>
 					'.$price[$x].'
 			   	</div>
@@ -314,6 +310,7 @@ function w3_close() {
 		';
 		if(($x+1)%4==0){echo '</div >';}}
 		if($x%4!=0){echo '</div >';}
+		$x=0;
 		?>
 		
 
@@ -321,12 +318,12 @@ function w3_close() {
 </div>
    <!-- pagination -->
 <div class="w3-bar w3-border-top w3-center">
-  <a href=<?php echo $thisurl2."page=1"?> class="w3-button">&laquo;</a>
-  <a href=<?php echo $thisurl2."page=1"?> class="w3-button">1</a>
-  <a href=<?php echo $thisurl2."page=2"?> class="w3-button">2</a>
-  <a href=<?php echo $thisurl2."page=3"?> class="w3-button">3</a>
-  <a href=<?php echo $thisurl2."page=4"?> class="w3-button">4</a>
-  <a href=<?php echo $thisurl2."page=4"?> class="w3-button">&raquo;</a>
+  <a href=<?php echo $thisurl2."page=1&"?> class="w3-button">&laquo;</a>
+  <a href=<?php echo $thisurl2."page=1&"?> class="w3-button">1</a>
+  <a href=<?php echo $thisurl2."page=2&"?> class="w3-button">2</a>
+  <a href=<?php echo $thisurl2."page=3&"?> class="w3-button">3</a>
+  <a href=<?php echo $thisurl2."page=4&"?> class="w3-button">4</a>
+  <a href=<?php echo $thisurl2."page=4&"?> class="w3-button">&raquo;</a>
 </div>
 
 

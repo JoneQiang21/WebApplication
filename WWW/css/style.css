@@ -2705,7 +2705,7 @@ clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 	.operation span {color:#975a5a;}
 	.goods{width:300px;}
 	.goods span{width:180px;padding:20px;text-align:center;float:left; font-size: 2px;}
-	.goods img{width:100px;height:80px;margin:2vh10px;float:left;}
+	.goods img{ max-height: 9vh;width:auto;margin:2vh10px;float:left;}
 	.price{width:130px;}
 	.count{width:90px;}
 	.count .add, .count input, .count .reduce{position:relative;z-index:1; display: inline-block;}

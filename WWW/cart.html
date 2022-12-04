@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shopping Cart</title>
+
+<script type="text/javascript" src="js/demo.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<!--webfont-->
+<link href='http://fonts.useso.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+
+<!-- start menu -->
+<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/megamenu.js"></script>
+<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+<script>$(document).ready(function(c) {
+	$('.alert-close').on('click', function(c){
+		$('.message').fadeOut('slow', function(c){
+	  		$('.message').remove();
+		});
+	});	  
+});
+</script>
+<script>$(document).ready(function(c) {
+	$('.alert-close1').on('click', function(c){
+		$('.message1').fadeOut('slow', function(c){
+	  		$('.message1').remove();
+		});
+	});	  
+});
+</script>
+</head>
+
+
+
+<body>
+<div class="header_top">
+		<ul>
+			<a href="login.html"><i style="position:fixed;right:2vw;z-index:3" class="material-icons w3-xxlarge">person</i></a>
+		</ul>
+
+<!-- navigation -->
+	<div class="header_bottom men_border w3-pagepadding" style="background-color: #f7f7f7">
+		<div class="container">
+			<div class="header-bottom-left w3-row">
+				<div class="logo w3-col l3 m3 s3">
+					<h1><a href="index.html"><span>Buy</span>shop</a></h1>
+				</div>
+				<div class="w3-col l6 m6 s5" style="margin: auto">
+		    	  	<ul class="megamenu skyblue">
+					<li class="active grid"><a class="color1" href="item.php?sex=1">Men</a>
+					<div class="megapanel">
+						<div class="row">
+							<div class="col3">
+								<div class="h_nav">
+									<ul>
+										<li><a href="item.php?sex=1&cat=accessory">Accessories</a></li>
+										<li><a href="item.php?sex=1&cat=bag">Bags</a></li>
+										<li><a href="item.php?sex=1">Caps & Hats</a></li>
+										<li><a href="item.php?sex=1">Hoodies & Sweatshirts</a></li>
+										<li><a href="item.php?sex=1">Jackets & Coats</a></li>
+										<li><a href="item.php?sex=1">Jeans</a></li>
+										<li><a href="item.php?sex=1">Jewellery</a></li>
+										<li><a href="item.php?sex=1">Jumpers & Cardigans</a></li>
+										<li><a href="item.php?sex=1">Leather Jackets</a></liÖ>
+										<li><a href="item.php?sex=1">Long Sleeve T-Shirts</a></li>
+										<li><a href="item.php?sex=1">Loungewear</a></li>
+									</ul>	
+								</div>							
+							</div>
+							<div class="col3">
+								<div class="h_nav">
+									<ul>
+										<li><a href="item.php?sex=1">Shirts</a></li>
+										<li><a href="item.php?sex=1">Shoes, Boots & Trainers</a></li>
+										<li><a href="item.php?sex=1">Shorts</a></li>
+										<li><a href="item.php?sex=1">Suits & Blazers</a></li>
+										<li><a href="item.php?sex=1">Sunglasses</a></li>
+										<li><a href="item.php?sex=1">Sweatpants</a></li>
+										<li><a href="item.php?sex=1">Swimwear</a></li>
+										<li><a href="item.php?sex=1">Trousers & Chinos</a></li>
+										<li><a href="item.php?sex=1">T-Shirts</a></li>
+										<li><a href="item.php?sex=1">Underwear & Socks</a></li>
+										<li><a href="item.php?sex=1">Vests</a></li>
+									</ul>	
+								</div>							
+							</div>
+						</div>
+					</div>
+					</li>
+				   	<li class="active action grid"><a class="color2" href="item.php?sex=0">Women</a>
+					<div class="megapanel">
+						<div class="row">
+							<div class="col3">
+								<div class="h_nav">
+									<ul>
+										<li><a href="item.php?sex=0">Accessories</a></li>
+										<li><a href="item.php?sex=0">Bags</a></li>
+										<li><a href="item.php?sex=0">Caps & Hats</a></li>
+										<li><a href="item.php?sex=0">Hoodies & Sweatshirts</a></li>
+										<li><a href="item.php?sex=0">Jackets & Coats</a></li>
+										<li><a href="item.php?sex=0">Jeans</a></li>
+										<li><a href="item.php?sex=0">Jewellery</a></li>
+										<li><a href="item.php?sex=0">Jumpers & Cardigans</a></li>
+										<li><a href="item.php?sex=0">Leather Jackets</a></li>
+										<li><a href="item.php?sex=0">Long Sleeve T-Shirts</a></li>
+										<li><a href="item.php?sex=0">Loungewear</a></li>
+									</ul>	
+								</div>							
+							</div>
+							<div class="col3">
+								<div class="h_nav">
+									<ul>
+										<li><a href="item.php?sex=0">Shirts</a></li>
+										<li><a href="item.php?sex=0">Shoes, Boots & Trainers</a></li>
+										<li><a href="item.php?sex=0">Shorts</a></li>
+										<li><a href="item.php?sex=0">Suits & Blazers</a></li>
+										<li><a href="item.php?sex=0">Sunglasses</a></li>
+										<li><a href="item.php?sex=0">Sweatpants</a></li>
+										<li><a href="item.php?sex=0">Swimwear</a></li>
+										<li><a href="item.php?sex=0">Trousers & Chinos</a></li>
+										<li><a href="item.php?sex=0">T-Shirts</a></li>
+										<li><a href="item.php?sex=0">Underwear & Socks</a></li>
+										<li><a href="item.php?sex=0">Vests</a></li>
+									</ul>	
+								</div>							
+							</div>
+						</div>
+					</div>
+					<li><a class="color4" href="about.html">About</a></li>				
+					<li><a class="color5" href="404.html">Blog</a></li>
+					<li><a class="color6" href="contact.html">Support</a></li>
+					</ul> 
+				</div>
+
+<!-- shopping cart and search -->
+				<div class="w3-col l3 m3 s4">
+					<ul class="icon1">
+						<a class="active-icon c1" href="cart.php"> </a>
+					</ul>
+					<div class="search">	  
+					<input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+					<input type="submit" value="Subscribe" id="submit" name="submit">
+					</div>
+				</div>
+			</div>
+ 		</div>
+	</div>
+</div>
+
+	<table id="cartTable" style="margin-top:10vh;">
+		<thead >
+			<tr>
+				<th><label class= "checkbox" style="display: inline-block"><input class="check-all check" type="checkbox"/><i style="background-color:#ffffff;top:3px;margin-right:2vw;"> </i>Select All</label></th>
+				<th>Item</th>
+				<th>Unit Price</th>
+				<th style="width:10vw;">Quantity</th>
+				<th>Total Price</th>
+				<th style="width:5vw;">Operation</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><label class="checkbox"><input class="check-one check" type="checkbox"/><i > </i></label></td>
+				<td class="goods"><img src="images/cart1.jpg" alt=""/><span>Casio/卡西欧 EX-TR350</span></td>
+				<td class="price">5999.88</td>
+				<td class="count"><span class="reduce">-</span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
+				<td class="subtotal">5999.88</td>
+				<td class="operation"><span class="delete">delete</span></td>
+			</tr>
+			<tr>
+				<td><label class="checkbox"><input class="check-one check" type="checkbox"/><i> </i></label></td>
+				<td class="goods"><img src="images/cart2.jpg" alt=""/><span>Canon/佳能 PowerShot SX50 HS</span></td>
+				<td class="price">3888.50</td>
+				<td class="count"><span class="reduce">-</span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
+				<td class="subtotal">3888.50</td>
+				<td class="operation"><span class="delete">delete</span></td>
+			</tr>
+			<tr>
+				<td><label class="checkbox"><input class="check-one check" type="checkbox"/><i> </i></label></td>
+				<td class="goods"><img src="images/cart3.jpg" alt=""/><span>Sony/索尼 DSC-WX300</span></td>
+				<td class="price">1428.50</td>
+				<td class="count"><span class="reduce">-</span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
+				<td class="subtotal">1428.50</td>
+				<td class="operation"><span class="delete">delete</span></td>
+			</tr>
+			
+			<tr>
+				<td><label class="checkbox"><input class="check-one check" type="checkbox"/><i> </i></label></td>
+				<td class="goods"><img src="images/cart4.jpg" alt=""/><span>Fujifilm/富士 instax mini 25</span></td>
+				<td class="price">640.60</td>
+				<td class="count"><span class="reduce">-</span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
+				<td class="subtotal">640.60</td>
+				<td class="operation"><span class="delete">delete</span></td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<div class="foot" id="foot">
+		<label class="fl checkbox select-all" ><input type="checkbox" class="check-all check"/><i style="background-color:#ffffff;top:13px;margin-right:2vw;"></i>&nbsp;select all</label>
+		<a class="fl delete" id="deleteAll" href="javascript:;">delete</a>
+		<div class="fr closing"><input type="submit" value="Checkout"/></div>
+		<div class="fr fttotal">Total：$<span id="priceTotal">0.00</span></div>
+		<div class="fr selected" id="selected"><span id="selectedTotal">0</span> Items selected</div>
+
+	</div>
+
+</div>
+
+<!-- footer -->
+<div class="w3-container w3-border-top footer" style="margin-top:10vh;">
+	<div class="w3-half w3-container w3-center">
+		<h3>Our Stores</h3>
+			<address class="address">
+              <p>9870 St Vincent Place, <br>Glasgow, DC 45 Fr 45.</p>
+              <dl>
+                 <dd>Freephone:<span> +1 800 254 2478</span></dd>
+                 <dd>Telephone:<span> +1 800 547 5478</span></dd>
+                 <dd>FAX: <span>+1 800 658 5784</span></dd>
+                 <dd>E-mail:&nbsp; <a href="mailto@example.com">info(at)buyshop.com</a></dd>
+              </dl>
+           </address>
+		  </div>
+<div class="w3-half w3-container">
+<h3 style="margin-left:10vw">Support</h3>
+			<ul class="list_1 w3-center">
+				<li><a href="#">Terms & Conditions</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Payment</a></li>
+				<li><a href="#">Services</a></li>
+			</ul>
+			<ul class="list_1 w3-center">
+				<li><a href="#">Services</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+	  </div>
+</div>
+
+   <!-- copyright -->
+<div class="w3-container footer">
+	<div class="copy">
+    <p>Copyright &copy; 2022.SUN SHUO     All rights reserved.</p>
+	</div>
+</div>
+</body>
+</html>		

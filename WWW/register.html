@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<!--webfont-->
+<link href='http://fonts.useso.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+
+<!-- start menu -->
+<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/megamenu.js"></script>
+<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+<script>$(document).ready(function(c) {
+	$('.alert-close').on('click', function(c){
+		$('.message').fadeOut('slow', function(c){
+	  		$('.message').remove();
+		});
+	});	  
+});
+</script>
+
+<!-- sidebar-->
+<script>$(document).ready(function(c) {
+	$('.alert-close1').on('click', function(c){
+		$('.message1').fadeOut('slow', function(c){
+	  		$('.message1').remove();
+		});
+	});	  
+});
+</script>
+
+<script type="text/javascript">
+	function get(id){return document.getElementById(id);}
+	
+	var check=false
+	
+	function isempty(str){
+		if (str == null || str.trim() == ""){return true;}
+		else{return false;}
+		}
+	
+	function checkemail(obj,message) {
+		var it = obj.validity;
+		if(it.valueMissing === true){obj.setCustomValidity('Please enter your email');}
+		else if (it.typeMismatch ===true){obj.setCustomValidity(message);}
+		}
+					
+	function checkpwd(objt) {
+		var pwd=get("pwd");
+		var pwd1=get("pwd1");
+		pwd.setCustomValidity('');pwd1.setCustomValidity('');
+		if(objt.valueMissing === true){objt.setCustomValidity('Please set your password');}
+		else if (pwd.value != pwd1.value){objt.setCustomValidity('Passwords are not the same');}
+		}
+	
+	function checkform(){
+	var pwd=get("pwd");
+	var pwd1=get("pwd1");
+	if(pwd.value != pwd1.value){check=false;}
+	else{check=true;}
+	}
+</script>
+
+
+
+</head>
+<body>
+
+<!-- navigation -->
+	<div class="header_bottom men_border w3-pagepadding" style="background-color: #f7f7f7">
+		<div class="container">
+			<div class="header-bottom-left w3-row">
+				<div class="logo w3-col l3 m3 s3">
+					<h1><a href="index.html"><span>Buy</span>shop</a></h1>
+				</div>
+				<div class="w3-col l6 m6 s5" style="margin: auto">
+		    	  	<ul class="megamenu skyblue">
+					<li class="active grid"><a class="color1" href="item.php?sex=1">Men</a>
+					<div class="megapanel">
+						<div class="row">
+							<div class="col3">
+								<div class="h_nav">
+									<ul>
+										<li><a href="item.php?sex=1&cat=accessory">Accessories</a></li>
+										<li><a href="item.php?sex=1&cat=bag">Bags</a></li>
+										<li><a href="item.php?sex=1">Caps & Hats</a></li>
+										<li><a href="item.php?sex=1">Hoodies & Sweatshirts</a></li>
+										<li><a href="item.php?sex=1">Jackets & Coats</a></li>
+										<li><a href="item.php?sex=1">Jeans</a></li>
+										<li><a href="item.php?sex=1">Jewellery</a></li>
+										<li><a href="item.php?sex=1">Jumpers & Cardigans</a></li>
+										<li><a href="item.php?sex=1">Leather Jackets</a></liÖ>
+										<li><a href="item.php?sex=1">Long Sleeve T-Shirts</a></li>
+										<li><a href="item.php?sex=1">Loungewear</a></li>
+									</ul>	
+								</div>							
+							</div>
+							<div class="col3">
+								<div class="h_nav">
+									<ul>
+										<li><a href="item.php?sex=1">Shirts</a></li>
+										<li><a href="item.php?sex=1">Shoes, Boots & Trainers</a></li>
+										<li><a href="item.php?sex=1">Shorts</a></li>
+										<li><a href="item.php?sex=1">Suits & Blazers</a></li>
+										<li><a href="item.php?sex=1">Sunglasses</a></li>
+										<li><a href="item.php?sex=1">Sweatpants</a></li>
+										<li><a href="item.php?sex=1">Swimwear</a></li>
+										<li><a href="item.php?sex=1">Trousers & Chinos</a></li>
+										<li><a href="item.php?sex=1">T-Shirts</a></li>
+										<li><a href="item.php?sex=1">Underwear & Socks</a></li>
+										<li><a href="item.php?sex=1">Vests</a></li>
+									</ul>	
+								</div>							
+							</div>
+						</div>
+					</div>
+					</li>
+				   	<li class="active action grid"><a class="color2" href="item.php?sex=0">Women</a>
+					<div class="megapanel">
+						<div class="row">
+							<div class="col3">
+								<div class="h_nav">
+									<ul>
+										<li><a href="item.php?sex=0">Accessories</a></li>
+										<li><a href="item.php?sex=0">Bags</a></li>
+										<li><a href="item.php?sex=0">Caps & Hats</a></li>
+										<li><a href="item.php?sex=0">Hoodies & Sweatshirts</a></li>
+										<li><a href="item.php?sex=0">Jackets & Coats</a></li>
+										<li><a href="item.php?sex=0">Jeans</a></li>
+										<li><a href="item.php?sex=0">Jewellery</a></li>
+										<li><a href="item.php?sex=0">Jumpers & Cardigans</a></li>
+										<li><a href="item.php?sex=0">Leather Jackets</a></li>
+										<li><a href="item.php?sex=0">Long Sleeve T-Shirts</a></li>
+										<li><a href="item.php?sex=0">Loungewear</a></li>
+									</ul>	
+								</div>							
+							</div>
+							<div class="col3">
+								<div class="h_nav">
+									<ul>
+										<li><a href="item.php?sex=0">Shirts</a></li>
+										<li><a href="item.php?sex=0">Shoes, Boots & Trainers</a></li>
+										<li><a href="item.php?sex=0">Shorts</a></li>
+										<li><a href="item.php?sex=0">Suits & Blazers</a></li>
+										<li><a href="item.php?sex=0">Sunglasses</a></li>
+										<li><a href="item.php?sex=0">Sweatpants</a></li>
+										<li><a href="item.php?sex=0">Swimwear</a></li>
+										<li><a href="item.php?sex=0">Trousers & Chinos</a></li>
+										<li><a href="item.php?sex=0">T-Shirts</a></li>
+										<li><a href="item.php?sex=0">Underwear & Socks</a></li>
+										<li><a href="item.php?sex=0">Vests</a></li>
+									</ul>	
+								</div>							
+							</div>
+						</div>
+					</div>
+					<li><a class="color4" href="about.html">About</a></li>				
+					<li><a class="color5" href="404.html">Blog</a></li>
+					<li><a class="color6" href="contact.html">Support</a></li>
+					</ul> 
+				</div>
+
+<!-- shopping cart and search -->
+				<div class="w3-col l3 m3 s4">
+					<ul class="icon1">
+						<a class="active-icon c1" href="cart.php"> </a>
+					</ul>
+					<div class="search">	  
+					<input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+					<input type="submit" value="Subscribe" id="submit" name="submit">
+					</div>
+				</div>
+			</div>
+ 		</div>
+	</div>
+</div>
+
+
+
+
+<!-- register-->
+<div class="single_top w3-pagepadding2">
+	 <div class="container"> 
+	    <div>
+		  	<form action="register_ok.php" method="post" onsubmit="return check;"> 
+				<div class="register-top-grid column_2 ">
+					<h3>PERSONAL INFORMATION</h3>
+					<div>
+						<span>First Name<label>*</label></span>
+						<input  type="text" name="fname" id="fname" required oninvalid="setCustomValidity('Please enter your name');" placeholder="eg.SUN" oninput="setCustomValidity('');"> 
+					</div>
+					<div>
+						<span>Last Name<label>*</label></span>
+						<input  type="text" name="lname" id="lname" required oninvalid="setCustomValidity('Please enter your name');" placeholder="eg.SHUO" oninput="setCustomValidity('');"> 
+					</div>
+					<div>
+						<span>Email Address<label>*</label></span>
+						<input type="email" name="email" id="email" required placeholder="example@mail.com" oninput="setCustomValidity('');checkemail(this,'Incorrect email address!');">
+					</div>
+					<a class="news-letter" href="#">
+						<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Sign Up for Newsletter</label>
+					</a>
+				</div>
+				<div class="register-bottom-grid">
+					<h3>LOGIN INFORMATION</h3>
+					<div>
+						<span>Password<label>*</label></span>
+						<input required  type="password" name="pwd" id="pwd"   oninput="setCustomValidity('');checkpwd(this);">
+					 </div>
+					 <div>
+						<span>Confirm Password<label>*</label></span>
+						<input required  type="password" id="pwd1" oninput="setCustomValidity('');checkpwd(this);">
+					 </div>
+				</div>
+				<div class="register-but">
+					   <input type="submit" value="submit" onclick="checkform();">
+				</div>
+			</form>
+		</div>
+    </div>
+</div>      
+
+ <!-- footer -->
+<div class="w3-container w3-border-top footer">
+	<div class="w3-half w3-container w3-center">
+		<h3>Our Stores</h3>
+			<address class="address">
+              <p>9870 St Vincent Place, <br>Glasgow, DC 45 Fr 45.</p>
+              <dl>
+                 <dd>Freephone:<span> +1 800 254 2478</span></dd>
+                 <dd>Telephone:<span> +1 800 547 5478</span></dd>
+                 <dd>FAX: <span>+1 800 658 5784</span></dd>
+                 <dd>E-mail:&nbsp; <a href="mailto@example.com">info(at)buyshop.com</a></dd>
+              </dl>
+           </address>
+		  </div>
+<div class="w3-half w3-container">
+<h3 style="margin-left:10vw">Support</h3>
+			<ul class="list_1 w3-center">
+				<li><a href="#">Terms & Conditions</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Payment</a></li>
+				<li><a href="#">Services</a></li>
+			</ul>
+			<ul class="list_1 w3-center">
+				<li><a href="#">Services</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+	  </div>
+</div>
+
+   <!-- copyright -->
+<div class="w3-container footer">
+	<div class="copy">
+    <p>Copyright &copy; 2022.SUN SHUO     All rights reserved.</p>
+	</div>
+</div>
+</body>
+</html>		

@@ -4,7 +4,6 @@
 <title>Single</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <?php
 	include_once("connproduct.php");
 	$thisurl='http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'];
@@ -22,10 +21,10 @@
 ?>
 	
 	
-	
 <!-- Custom Theme files -->
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/etalage.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 <!-- Custom Theme files -->
@@ -39,7 +38,6 @@
 <link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
-<link rel="stylesheet" href="css/etalage.css">
 <script src="js/jquery.etalage.min.js"></script>
 <script>
 			jQuery(document).ready(function($){
@@ -225,7 +223,7 @@ function checkorder(){
 					<ul id="etalage">
 						<li>
 								<img class="etalage_thumb_image" <?php echo "src='images/".$file_name."'" ?> />
-								<img class="etalage_source_image"<?php echo "src='images/".$file_name."'" ?>class="img-responsive" title="" />
+								<img class="etalage_source_image" <?php echo "src='images/".$file_name."'" ?> title="" />
 						</li>
 						<?php
 						$thumb_name=explode('.',$file_name)[0];
@@ -238,7 +236,8 @@ function checkorder(){
 							<img class='etalage_thumb_image'  src=".$thumb_file." />
 							<img class=' etalage_source_image' src=".$thumb_file."  title='' />
 							</li>
-						";}else{break;}}?>
+						";}else{break;}}
+						?>
 					</ul>	
 				</div>
 			</div>
@@ -281,7 +280,7 @@ function checkorder(){
           	  <ul class="single_social w3-cell-row">
 				  <li class="w3-cell"><a href="https://www.facebook.com/"> <i class="s_fb"> </i> <div class="social_desc w3-left-align">Share<br> on facebook</div><div class="clearfix"> </div></a></li>
 				  <li class="w3-cell"><a href="https://twitter.com/"> <i class="s_twt"> </i> <div class="social_desc w3-left-align">Tweet<br> this product</div><div class="clearfix"> </div></a></li>
-				  <li class="w3-cell"><a href="#"> <i class="s_google"> </i><div class="social_desc w3-left-align">Google+<br> this product</div><div class="clearfix"> </div></a></li>
+				  <li class="w3-cell"><a href="https://www.google.com/"> <i class="s_google"> </i><div class="social_desc w3-left-align">Google+<br> this product</div><div class="clearfix"> </div></a></li>
 				  <li class="w3-cell last"><a href="#"> <i class="s_email"> </i><div class="social_desc w3-left-align">Email<br> a Friend</div><div class="clearfix"> </div></a></li>
 			  </ul>
 	</div>
@@ -390,7 +389,7 @@ function checkorder(){
 	</div>
 </div>
 
-   <!-- copyrightr -->
+   <!-- copyright -->
 <div class="w3-container">
 	<div class="copy">
     <p>Copyright &copy; 2022.SUN SHUO     All rights reserved.</p>

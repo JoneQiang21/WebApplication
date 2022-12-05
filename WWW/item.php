@@ -1,9 +1,14 @@
 <!DOCTYPE HTML>
+<?php session_start();?>
 <html>
 <head>
 
 <?php
 	include_once("label.php");
+	$thisurl='http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'];$thisurl1=explode("order=",$thisurl)[0];
+	$thisurl1=explode("page=",$thisurl1)[0];
+	$thisurl2=explode("page=",'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'])[0];
+	$thisurl3=explode("session=",$thisurl1)[0];
 ?>
 
 <title>Item Page</title>
@@ -91,58 +96,58 @@ function w3_close() {
 		<div class="sky-form h_nav">
 			<h4>All</h4>
 			<ul class="w3-center w3-sans-serif w3-text-blue-grey">
-				<li><a href="women.html">new arrivals</a></li>
+				<li><a href="item.php?order=date&">new arrivals</a></li>
 				<li><a href="#">trends</a></li>
-				<li><a href="#">men</a></li>
-				<li><a href="#">women</a></li>
+				<li><a href="item.php?sex=1&">men</a></li>
+				<li><a href="item.php?sex=0&">women</a></li>
 				<li><a href="#">kids</a></li>
 				<li><a href="item.php">all</a></li>
 			</ul>	
 		</div>
-		<form method="post">
+		<form action=<?php echo $thisurl3;?> method="post">
 		<h3 style="padding-left:2vw"><i>Filter by</i></h3>
 		<section  class="sky-form" >
 					<h4>Style</h4>
 						<div class="w3-sans-serif w3-text-blue-grey" text-transform='capitalize' style="padding: 0 2vw;">
-								<label for="cat1" class="checkbox"><input type="checkbox" name="style" id="cat1"><i></i>Sports</label>
-								<label for="cat2" class="checkbox"><input type="checkbox" name="style" id="cat2"><i></i>fashion</label>
-								<label for="cat3" class="checkbox"><input type="checkbox" name="style" id="cat3"><i></i>households</label>
-								<label for="cat4" class="checkbox"><input type="checkbox" name="style" id="cat4"><i></i>decoration</label>
-								<label for="cat5" class="checkbox"><input type="checkbox" name="style" id="cat5"><i></i>leisure</label>
-								<label for="cat6" class="checkbox"><input type="checkbox" name="style" id="cat6"><i></i>business</label>
+								<label for="cat1" class="checkbox"><input type="checkbox" name="style1" id="cat1" value="sport"><i></i>Sports</label>
+								<label for="cat2" class="checkbox"><input type="checkbox" name="style2" id="cat2" value="fashion"><i></i>fashion</label>
+								<label for="cat3" class="checkbox"><input type="checkbox" name="style3" id="cat3" value="household"><i></i>households</label>
+								<label for="cat4" class="checkbox"><input type="checkbox" name="style4" id="cat4" value="decoration"><i></i>decoration</label>
+								<label for="cat5" class="checkbox"><input type="checkbox" name="style5" id="cat5" value="leisure"><i></i>leisure</label>
+								<label for="cat6" class="checkbox"><input type="checkbox" name="style6" id="cat6" value="business"><i></i>business</label>
 						</div>
 		</section>
 		<section  class="sky-form" >
 					<h4>Type</h4>
 						<div class="w3-sans-serif w3-text-blue-grey" text-transform='capitalize' style="padding: 0 2vw;">
-								<label for="type1" class="checkbox"><input type="checkbox" name="type" id="type1"><i></i>top</label>
-								<label for="type2" class="checkbox"><input type="checkbox" name="type" id="type2"><i></i>bottom</label>
-								<label for="type5" class="checkbox"><input type="checkbox" name="type" id="type3"><i></i>Bags</label>
-								<label for="type6" class="checkbox"><input type="checkbox" name="type" id="type4"><i></i>shoes</label>
-								<label for="type8" class="checkbox"><input type="checkbox" name="type" id="type6"><i></i>Jewellery</label>
-								<label for="type9" class="checkbox"><input type="checkbox" name="type" id="type7"><i></i>belts</label>
-								<label for="type10" class="checkbox"><input type="checkbox" name="type" id="type8"><i></i>watches</label>
-								<label for="type11" class="checkbox"><input type="checkbox" name="type" id="type9"><i></i>glasses</label>
-								<label for="type12" class="checkbox"><input type="checkbox" name="type" id="type10"><i></i>scarfs</label>
-								<label for="type13" class="checkbox"><input type="checkbox" name="type" id="type11"><i></i>hats</label>
+								<label for="type1" class="checkbox"><input type="checkbox" name="type1" id="type1" value="top"><i></i>top</label>
+								<label for="type2" class="checkbox"><input type="checkbox" name="type2" id="type2" value="bottom"><i></i>bottom</label>
+								<label for="type3" class="checkbox"><input type="checkbox" name="type3" id="type3" value="bag"><i></i>Bags</label>
+								<label for="type4" class="checkbox"><input type="checkbox" name="type4" id="type4" value="shoes"><i></i>shoes</label>
+								<label for="type5" class="checkbox"><input type="checkbox" name="type5" id="type5" value="jewellery"><i></i>Jewellery</label>
+								<label for="type6" class="checkbox"><input type="checkbox" name="type6" id="type6" value="belt"><i></i>belts</label>
+								<label for="type7" class="checkbox"><input type="checkbox" name="type7" id="type7" value="watch"><i></i>watches</label>
+								<label for="type8" class="checkbox"><input type="checkbox" name="type8" id="type8" value="glasses"><i></i>glasses</label>
+								<label for="type9" class="checkbox"><input type="checkbox" name="type9" id="type9" value="scarf"><i></i>scarfs</label>
+								<label for="type10" class="checkbox"><input type="checkbox" name="type10" id="type10" value="hat"><i></i>hats</label>
 						</div>
 		</section>
 		<section class="sky-form" style="margin-bottom:2px;">
 			<h4>colour</h4>
 			<ul class="w_nav2">
-				<li><label class="colorbox color1" ><input type="checkbox" id="color1" name="colorcheck" value="1"><i></i></label></li>
-				<li><label class="colorbox color2" ><input type="checkbox" id="color2" name="colorcheck" value="2"><i></i></label></li>
-				<li><label class="colorbox color3" ><input type="checkbox" id="color3" name="colorcheck" value="3"><i></i></label></li>
-				<li><label class="colorbox color4" ><input type="checkbox" id="color4" name="colorcheck" value="4"><i></i></label></li>
-				<li><label class="colorbox color5" ><input type="checkbox" id="color5" name="colorcheck" value="5"><i></i></label></li>
-				<li><label class="colorbox color6" ><input type="checkbox" id="color6" name="colorcheck" value="6"><i></i></label></li>
-				<li><label class="colorbox color7" ><input type="checkbox" id="color7" name="colorcheck" value="7"><i></i></label></li>
-				<li><label class="colorbox color9" ><input type="checkbox" id="color9" name="colorcheck" value="9"><i></i></label></li>
-				<li><label class="colorbox color11" ><input type="checkbox" id="color11" name="colorcheck" value="11"><i></i></label></li>
-				<li><label class="colorbox color13" ><input type="checkbox" id="color13" name="colorcheck" value="13"><i></i></label></li>
-				<li><label class="colorbox color14" ><input type="checkbox" id="color14" name="colorcheck" value="14"><i></i></label></li>
-				<li><label class="colorbox color15" ><input type="checkbox" id="color15" name="colorcheck" value="15"><i></i></label></li>
-				<li><label class="colorbox color16"><input type="checkbox" id="color16" name="colorcheck" value="#16"><i></i></label></li>
+				<li><label class="colorbox color1" ><input type="checkbox" id="color1" name="color1" value="blue"><i></i></label></li>
+				<li><label class="colorbox color2" ><input type="checkbox" id="color2" name="color2" value="cyan"><i></i></label></li>
+				<li><label class="colorbox color3" ><input type="checkbox" id="color3" name="color3" value="purple"><i></i></label></li>
+				<li><label class="colorbox color4" ><input type="checkbox" id="color4" name="color4" value="white"><i></i></label></li>
+				<li><label class="colorbox color5" ><input type="checkbox" id="color5" name="color5" value="red"><i></i></label></li>
+				<li><label class="colorbox color6" ><input type="checkbox" id="color6" name="color6" value="green"><i></i></label></li>
+				<li><label class="colorbox color7" ><input type="checkbox" id="color7" name="color7" value="orange"><i></i></label></li>
+				<li><label class="colorbox color9" ><input type="checkbox" id="color9" name="color8" value="yellow"><i></i></label></li>
+				<li><label class="colorbox color11" ><input type="checkbox" id="color11" name="color9" value="gray"><i></i></label></li>
+				<li><label class="colorbox color13" ><input type="checkbox" id="color13" name="color10" value="pink"><i></i></label></li>
+				<li><label class="colorbox color14" ><input type="checkbox" id="color14" name="color11" value="brown"><i></i></label></li>
+				<li><label class="colorbox color15" ><input type="checkbox" id="color15" name="color12" value="olive"><i></i></label></li>
+				<li><label class="colorbox color16"><input type="checkbox" id="color16" name="color13" value="black"><i></i></label></li>
 			</ul>
 		</section>
 		<section class="register-but w3-center sky-form" style="margin-top:0;margin-bottom:15px;">
@@ -267,15 +272,13 @@ function w3_close() {
 <!-- sort -->
 <div class="container women_main col-md-9 w_content women w3-pagepadding">
 	<a href="#"><h4>Total - <span><?php echo count($id);   ?> items</span> </h4></a>
-	<?php $thisurl='http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'];$thisurl1=explode("order=",$thisurl)[0];
-	$thisurl2=explode("page=",$thisurl)[0];?>
 	<ul class="w_nav">
 		<li >Sort : </li>
-		<li><a class="active" href=<?php echo $thisurl1."order=id&" ?>>popular</a></li> |
-		<li><a href=<?php echo $thisurl1."order=date&" ?>>new </a></li> |
-		<li><a href="#">discount</a></li> |
-		<li><a href=<?php echo $thisurl1."order=price&"  ?>>price: Low High </a></li> |
-		<li><a href=<?php echo $thisurl1."order=priced&" ?>>price: High Low </a></li> 
+		<li><a class="active" href=<?php echo $thisurl1."order=id&&page=1&session=1&" ?>>popular</a></li> |
+		<li><a href=<?php echo $thisurl1."order=date&page=1&session=1&" ?>>new </a></li> |
+		<li><a>discount</a></li> |
+		<li><a href=<?php echo $thisurl1."order=price&page=1&session=1&"  ?>>price: Low High </a></li> |
+		<li><a href=<?php echo $thisurl1."order=priced&page=1&session=1&" ?>>price: High Low </a></li> 
 	</ul>
 </div>
 
@@ -318,12 +321,12 @@ function w3_close() {
 </div>
    <!-- pagination -->
 <div class="w3-bar w3-border-top w3-center">
-  <a href=<?php echo $thisurl2."page=1&"?> class="w3-button">&laquo;</a>
-  <a href=<?php echo $thisurl2."page=1&"?> class="w3-button">1</a>
-  <a href=<?php echo $thisurl2."page=2&"?> class="w3-button">2</a>
-  <a href=<?php echo $thisurl2."page=3&"?> class="w3-button">3</a>
-  <a href=<?php echo $thisurl2."page=4&"?> class="w3-button">4</a>
-  <a href=<?php echo $thisurl2."page=4&"?> class="w3-button">&raquo;</a>
+  <a href=<?php echo $thisurl2."page=1&session=1&"?> class="w3-button">&laquo;</a>
+  <a href=<?php echo $thisurl2."page=1&session=1&"?> class="w3-button">1</a>
+  <a href=<?php echo $thisurl2."page=2&session=1&"?> class="w3-button">2</a>
+  <a href=<?php echo $thisurl2."page=3&session=1&"?> class="w3-button">3</a>
+  <a href=<?php echo $thisurl2."page=4&session=1&"?> class="w3-button">4</a>
+  <a href=<?php echo $thisurl2."page=4&session=1&"?> class="w3-button">&raquo;</a>
 </div>
 
 

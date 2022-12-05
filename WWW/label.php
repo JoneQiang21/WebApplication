@@ -1,14 +1,42 @@
 <?php
+
 include_once("connproduct.php");
 $label=$_SERVER['QUERY_STRING'];
+
+$session=explode("session=",$label)[1];
+$session=explode("&",$session)[0];
+
+if($session==1){}else{unset($_SESSION['type']);unset($_SESSION['color']);unset($_SESSION['style']);}
+
+if($_POST){
+	$type=array();
+	$color=array();
+	$style=array();
+foreach($_POST as $x => $val){
+	if (strstr($x,'type')){array_push($type,'"'.$val.'"');}
+	if (strstr($x,'color')){array_push($color,'"'.$val.'"');}
+	if (strstr($x,'style')){array_push($style,'"'.$val.'"');}}
+if($type!=null){$_SESSION['type']=$type;}else{unset($_SESSION['type']);}
+if($color!=null){$_SESSION['color']=$color;}else{unset($_SESSION['color']);}
+if($style!=null){$_SESSION['style']=$style;}else{unset($_SESSION['style']);}
+}
+
+if(isset($_SESSION['type'])){
+$type_query=" and type in (".implode(",",$_SESSION['type']).")";}
+else{$type_query="";}
+
+if(isset($_SESSION['style'])){
+$style_query=" and style in (".implode(",",$_SESSION['style']).")";}
+else{$style_query="";}
+
+if(isset($_SESSION['color'])){
+$color_query=" and color in (".implode(",",$_SESSION['color']).")";}
+else{$color_query="";}
+
 $sex=explode("sex=",$label)[1];
 $sex=explode("&",$sex)[0];
 $cat=explode("cat=",$label)[1];
 $cat=explode("&",$cat)[0];
-$feature=explode("feature=",$label)[1];
-$feature=explode("&",$feature)[0];
-$type=explode("type=",$label)[1];
-$type=explode("&",$type)[0];
 $sort=explode("order=",$label)[1];
 $sort=explode("&",$sort)[0];
 $page=explode("page=",$label)[1];
@@ -23,13 +51,6 @@ if($cat!=null){
 $cat_query=" and category='".$cat."'";}
 else{$cat_query='';}
 
-if($type!=null){
-$type_query=" and type='".$type."'";}
-else{$type_query="";}
-
-if($feature!=null){
-$feature_query=" and feature='".$feature."'";}
-else{$feature_query='';}
 
 if($sort==null){$sort='id';}
 else if($sort=='priced'){$sort='price desc';}
@@ -39,14 +60,14 @@ $page=intval($page);}
 else{$page=1;}
 
 $i=1;
-
-$sql = "SELECT * FROM products WHERE (id!='null'".$sex_query.$cat_query.$type_query.$feature_query.") order by ".$sort;
+$sql = "SELECT * FROM products WHERE (id!='null'".$sex_query.$cat_query.$type_query.$style_query.$color_query.") order by ".$sort;
 $result = $conn->query($sql);
 $product_names = array();
 $file_names = array();
 $price= array();
 $intro= array();
 $id= array();
+#print_r($sql);
 if (mysqli_num_rows($result) > 0) {
 	  // output data of each row
 	while($row = mysqli_fetch_assoc($result) and $i<=12*$page) {

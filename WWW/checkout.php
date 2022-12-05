@@ -197,10 +197,7 @@ $conn->close();
 						}
 						break;
 					case 'delete': //点击了删除
-						var conf = confirm('确定删除此商品吗？');
-						if (conf) {
-							this.parentNode.removeChild(this);
-						}
+						this.parentNode.removeChild(this);
 						break;
 				}
 				getTotal();
@@ -222,21 +219,18 @@ $conn->close();
 		// 点击全部删除
 		deleteAll.onclick = function () {
 			if (selectedTotal.innerHTML != 0) {
-				var con = confirm('确定删除所选商品吗？'); //弹出确认框
+				var con = confirm('Are you sure to delete all items?'); //弹出确认框
 				if (con) {
 					for (var i = 0; i < tr.length; i++) {
 						// 如果被选中，就删除相应的行
-						if (tr[i].getElementsByTagName('input')[0].checked) {
 							tr[i].parentNode.removeChild(tr[i]); 
-							
-							
+							window.location.href = 'deleteitem.php?id=-1'; 
 							// 删除相应节点
 							i--; //回退下标位置
-						}
 					}
 				}
 			} else {
-				alert('请选择商品！');
+				alert('No item selected!');
 			}
 			getTotal(); //更新总数
 		}
@@ -364,8 +358,8 @@ $conn->close();
 	<table id="cartTable" style="margin-top:10vh;">
 		<thead >
 			<tr>
-				<th><label class= "checkbox" style="display: inline-block"><input class="check-all check" type="checkbox"/><i style="background-color:#ffffff;top:3px;margin-right:2vw;"> </i>Select All</label></th>
-				<th>Item</th>
+				<th style="width:8vw;"><label class= "checkbox" style="display: inline-block;"><input class="check-all check" type="checkbox"/><i style="background-color:#ffffff;top:3px;margin-right:2vw;"> </i>Select All</label></th>
+				<th >Item</th>
 				<th>Unit Price</th>
 				<th style="width:10vw;">Quantity</th>
 				<th>Total Price</th>
@@ -383,7 +377,7 @@ $conn->close();
 					<td class="price">'.$prices[$i].'</td>
 					<td class="count"><span class="reduce">-</span><input name="quantity_'.$cart_id[$i].'" class="count-input" type="text" value="1"/><span class="add">+</span></td>
 					<td class="subtotal">'.$prices[$i].'</td>
-					<td class="operation"><span class="delete">delete</span></td>
+					<td class="operation"><a href="deleteitem.php?id='.$cart_id[$i].'"><span class="delete" >delete</span></a></td>
 				</tr>
 				';
 				$i++;
@@ -395,7 +389,7 @@ $conn->close();
 	
 	<div class="foot" id="foot">
 		<label class="fl checkbox select-all" ><input type="checkbox" class="check-all check"/><i style="background-color:#ffffff;top:13px;margin-right:2vw;"></i>&nbsp;select all</label>
-		<a class="fl delete" id="deleteAll" href="javascript:;">delete</a>
+		<a class="fl delete" id="deleteAll" href="javascript:;">delete all</a>
 		
 		<div class="fr closing"><input type="submit" value="Checkout"/></div>
 		

@@ -18,7 +18,7 @@ $conn=mysqli_connect($mysql_server_name,$mysql_username,$mysql_password,$mysql_d
 	mysqli_query($conn, 'set character set utf8');
 if (mysqli_connect_errno($conn)) 
 { 
-	die("连接 MySQL 失败: " . mysqli_connect_error()); 
+	die("Connection failed: " . mysqli_connect_error()); 
 }
 	
 	

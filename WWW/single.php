@@ -149,7 +149,7 @@ function checkorder(){
 									
 										<li><a href="item.php?sex=1&cat=shoes&">Shoes, Boots & Trainers</a></li>
 										<li><a href="item.php?sex=1&cat=shorts&">Shorts</a></li>
-										<li><a href="item.php?sex=1&cat=suits&">Suits & Blazers</a></li>
+										<li><a href="item.php?sex=1&cat=suit&">Suits & Blazers</a></li>
 										<li><a href="item.php?sex=1&cat=sunglasses&">Sunglasses</a></li>
 										<li><a href="item.php?sex=1&cat=swimwear&">Swimwear</a></li>
 										<li><a href="item.php?sex=1&cat=trousers&">Trousers & Chinos</a></li>
@@ -170,6 +170,7 @@ function checkorder(){
 												<li><a href="item.php?sex=0&cat=accessory&">Accessories</a></li>
 												<li><a href="item.php?sex=0&cat=bag&">Bags</a></li>
 												<li><a href="item.php?sex=0&cat=hat&">Caps & Hats</a></li>
+												<li><a href="item.php?sex=0&cat=dress&">Dresses</a></li>
 												<li><a href="item.php?sex=0&cat=hoodie&">Hoodies & Sweatshirts</a></li>
 												<li><a href="item.php?sex=0&cat=jacket&">Jackets & Coats</a></li>
 												<li><a href="item.php?sex=0&cat=jeans&">Jeans</a></li>
@@ -182,9 +183,9 @@ function checkorder(){
 										<div class="h_nav">
 											<ul>
 											
-												<li><a href="item.php?sex=0&cat=shoes&">Shoes, Boots & Trainers</a></li>
-												<li><a href="item.php?sex=0&cat=shorts&">Shorts</a></li>
-												<li><a href="item.php?sex=0&cat=suits&">Suits & Blazers</a></li>
+												<li><a href="item.php?sex=0&cat=shoes&">Shoes, Heels & Trainers</a></li>
+												<li><a href="item.php?sex=0&cat=skirt&">Skirts</a></li>
+												<li><a href="item.php?sex=0&cat=suit&">Suits & Blazers</a></li>
 												<li><a href="item.php?sex=0&cat=sunglasses&">Sunglasses</a></li>
 												<li><a href="item.php?sex=0&cat=swimwear&">Swimwear</a></li>
 												<li><a href="item.php?sex=0&cat=trousers&">Trousers & Chinos</a></li>
@@ -206,9 +207,11 @@ function checkorder(){
 					<ul class="icon1">
 						<a class="active-icon c1" href="cart.php"> </a>
 					</ul>
-					<div class="search">	  
-					<input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-					<input type="submit" value="Subscribe" id="submit" name="submit">
+					<div class="search">
+					<form action='item.php' method='post'>
+						<input type="text" name="search" class="textbox" value=<?php if($_SESSION['search']){echo $_SESSION['search'];}else{echo '""';}?> placeholder='Search'   />
+						<input type="submit" value="Subscribe" id="submit" name="submit"/>
+					</form>
 					</div>
 				</div>
 			</div>

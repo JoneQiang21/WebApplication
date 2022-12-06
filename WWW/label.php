@@ -6,12 +6,15 @@ $label=$_SERVER['QUERY_STRING'];
 $session=explode("session=",$label)[1];
 $session=explode("&",$session)[0];
 
-if($session==1){}else{unset($_SESSION['type']);unset($_SESSION['color']);unset($_SESSION['style']);}
-
+if($session==1){}else{unset($_SESSION['type']);unset($_SESSION['color']);unset($_SESSION['style']);unset($_SESSION['search']);}
+$search=$_SESSION['search'];
 if($_POST){
 	$type=array();
 	$color=array();
 	$style=array();
+	$search=$_POST['search'];
+	if($search){$_SESSION['search']=$search;}
+	##print_r($_SESSION['search']);
 foreach($_POST as $x => $val){
 	if (strstr($x,'type')){array_push($type,'"'.$val.'"');}
 	if (strstr($x,'color')){array_push($color,'"'.$val.'"');}
@@ -59,16 +62,21 @@ if($page!=null){
 $page=intval($page);}
 else{$page=1;}
 
+if($search!=null){
+$search_query=" and product_name like '%$search%'";}
+else{$search_query='';}
+
 $i=1;
-$sql = "SELECT * FROM products WHERE (id!='null'".$sex_query.$cat_query.$type_query.$style_query.$color_query.") order by ".$sort;
+$sql = "SELECT * FROM products WHERE (id!='null' ".$sex_query.$cat_query.$search_query.$type_query.$style_query.$color_query.") order by ".$sort;
 $result = $conn->query($sql);
 $product_names = array();
 $file_names = array();
 $price= array();
 $intro= array();
 $id= array();
-#print_r($sql);
+##print_r($sql);
 if (mysqli_num_rows($result) > 0) {
+	$item_number=mysqli_num_rows($result);
 	  // output data of each row
 	while($row = mysqli_fetch_assoc($result) and $i<=12*$page) {
 		if($i%12==1){$product_names = array();

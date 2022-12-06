@@ -94,7 +94,7 @@ function w3_close() {
 	<!-- start sidebar -->
 	<div class="col-md-3" style="z-index:4">
 		<div class="sky-form h_nav">
-			<h4>All</h4>
+			<h4>Category</h4>
 			<ul class="w3-center w3-sans-serif w3-text-blue-grey">
 				<li><a href="item.php?order=date&">new arrivals</a></li>
 				<li><a href="#">trends</a></li>
@@ -259,9 +259,11 @@ function w3_close() {
 					<ul class="icon1">
 						<a class="active-icon c1" href="cart.php"> </a>
 					</ul>
-					<div class="search">	  
-					<input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-					<input type="submit" value="Subscribe" id="submit" name="submit">
+					<div class="search">
+					<form action='item.php' method='post'>
+						<input type="text" name="search" class="textbox" value=<?php if($_SESSION['search']){echo $_SESSION['search'];}else{echo '""';}?> placeholder='Search'   />
+						<input type="submit" value="Subscribe" id="submit" name="submit"/>
+					</form>
 					</div>
 				</div>
 			</div>
@@ -271,7 +273,7 @@ function w3_close() {
 
 <!-- sort -->
 <div class="container women_main col-md-9 w_content women w3-pagepadding">
-	<a href="#"><h4>Total - <span><?php echo count($id);   ?> items</span> </h4></a>
+	<h4>Total - <span><?php echo $item_number;?> items</span> </h4>
 	<ul class="w_nav">
 		<li >Sort : </li>
 		<li><a class="active" href=<?php echo $thisurl1."order=id&&page=1&session=1&" ?>>popular</a></li> |

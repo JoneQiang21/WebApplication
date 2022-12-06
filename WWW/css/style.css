@@ -455,6 +455,10 @@ span.actual{
 .search input[type="text"]:focus{
 	max-width:12vw;
 }
+
+.search input[type="text"]::-webkit-input-placeholder  {
+color: #d6d6d6;
+}
 .search input[type="submit"] {
 	  border: none;
 	  text-indent: -9999px;
@@ -2182,9 +2186,8 @@ p.cart {
 
 .img-responsive{
 	display: block;
-  	max-width: 100%;
+	max-width: 100%;
 	margin:0 auto;
-	
 }
 
 .checkbox i {
@@ -2694,7 +2697,7 @@ clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 .fl{float:left;}
 .fr{float:right;}
 	
-	.catbox{width:940px;margin:20px auto;}
+	.catbox{width:80vw;margin:20px auto;}
 	.catbox table{text-align:center;width:100%;}
 	.catbox table th,.catbox table td{border-bottom:1px solid #afa4a1;}
 	.catbox table th{background:#ddd;border-bottom:1px solid #6c3e3e;height:7vh;}

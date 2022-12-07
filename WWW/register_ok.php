@@ -39,7 +39,7 @@
 		
 		if($result){
 			echo"Nice!";
-			}else{echo"<script>alter('Failed!');history.go(-1);</script>";}
+			}else{echo"<script>alert('Failed!');history.go(-1);</script>";}
 
 	echo"<br>";
 	echo"Welcome, $fname $lname ! <br> Teleporting to Login page....";

@@ -21,16 +21,28 @@
 ?>
 	
 	
+	
 <!-- Custom Theme files -->
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/etalage.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+
 <!-- Custom Theme files -->
 <!--webfont-->
 <link href='http://fonts.useso.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+
+<style>
+.images_3_of_2 {
+	width:100vw !important;
+	float: left;
+	 margin-right: 2.6%;
+	 overflow:hidden;
+	}
+
+</style>
 
 
 <!-- start menu -->
@@ -331,31 +343,31 @@ function checkorder(){
 	        <div class="box_3 w3-row">
 				<div class="col-md-3 w3-quarter">
 	            	<div class="content_box">
-						<a href="single.html"><img src="images/pic6.jpg" class="img-responsive" alt=""></a>
+						<a href="single.php?id=17"><img src="images/pic6.jpg" class="img-responsive" alt=""></a>
 	   				</div>
-	   				<h4><a href="single.html">Contrary to popular belief</a></h4>
-	   				<p>$ 199</p>
+	   				<h4><a href="single.php?id=17">omni-Apple</a></h4>
+	   				<p>$ 57.8</p>
 	   			</div>
 	            <div class="col-md-3 w3-quarter">
 	            	<div class="content_box">
-						<a href="single.html"><img src="images/pic2.jpg" class="img-responsive" alt=""></a>
+						<a href="single.php?id=7"><img src="images/pic2.jpg" class="img-responsive" alt=""></a>
 	   				</div>
-	   				<h4><a href="single.html">Contrary to popular belief</a></h4>
-					<p>$ 199</p>
+	   				<h4><a href="single.php?id=7">Orange core</a></h4>
+					<p>$ 9.25</p>
 	   			</div>
 	            <div class="col-md-3 w3-quarter">
 	            	<div class="content_box">
-						<a href="single.html"><img src="images/pic4.jpg" class="img-responsive" alt=""></a>
+						<a href="single.php?id=12"><img src="images/pic4.jpg" class="img-responsive" alt=""></a>
 					</div>
-	   				<h4><a href="single.html">Contrary to popular belief</a></h4>
-	   				<p>$ 199</p>
+	   				<h4><a href="single.php?id=12">Rambutan</a></h4>
+	   				<p>$ 306.19</p>
 	   			</div>
 	            <div class="col-md-3 w3-quarter">
 	            	<div class="content_box">
-						<a href="single.html"><img src="images/pic5.jpg" class="img-responsive" alt=""></a>
+						<a href="single.php?id=13"><img src="images/pic5.jpg" class="img-responsive" alt=""></a>
 	   				</div>
-	   				<h4><a href="single.html">Contrary to popular belief</a></h4>
-	   				<p>$ 199</p>
+	   				<h4><a href="single.php?id=13">ambi-Grjpe</a></h4>
+	   				<p>$ 225.37</p>
 				</div>
 			</div>
 		</div>

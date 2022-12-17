@@ -44,6 +44,12 @@
 
 </style>
 
+<script>
+function previouspage(){
+history.back();
+}
+</script>
+
 
 <!-- start menu -->
 <script src="js/jquery.easydropdown.js"></script>
@@ -258,7 +264,7 @@ function checkorder(){
 			</div>
 			<div class="desc1 span_3_of_2 w3-col l7 m5 w3-right">
 			<ul class="back">
-				<li><i class="back_arrow"> </i>Back to <a href="index.html"> Men Clothing </a></li>
+				<li><i class="back_arrow"> </i>Back to <a onclick="previouspage()"> Previous Page </a></li>
 			</ul>
 			<h1><?php echo $product_name;?></h1>
 			<ul class="price_single w3-row">
@@ -277,11 +283,11 @@ function checkorder(){
 					</select>
 				</div>
 				<ul class="color_list">
-					<li><a href="#"> <span class="color1"> </span></a></li>
-					<li><a href="#"> <span class="color2"> </span></a></li>
-					<li><a href="#"> <span class="color3"> </span></a></li>
-					<li><a href="#"> <span class="color4"> </span></a></li>
-					<li><a href="#"> <span class="color5"> </span></a></li>
+					<li><a> <span class="color1"> </span></a></li>
+					<li><a> <span class="color2"> </span></a></li>
+					<li><a> <span class="color3"> </span></a></li>
+					<li><a> <span class="color4"> </span></a></li>
+					<li><a> <span class="color5"> </span></a></li>
 				</ul>
 			</div>
 			<br>

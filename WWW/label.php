@@ -57,6 +57,7 @@ else{$cat_query='';}
 
 if($sort==null){$sort='id';}
 else if($sort=='priced'){$sort='price desc';}
+else if($sort=='discount'){$sort='discount desc';}
 
 if($page!=null){
 $page=intval($page);}
@@ -74,6 +75,7 @@ $file_names = array();
 $price= array();
 $intro= array();
 $id= array();
+$discount=array();
 ##print_r($sql);
 if (mysqli_num_rows($result) > 0) {
 	$item_number=mysqli_num_rows($result);
@@ -83,12 +85,14 @@ if (mysqli_num_rows($result) > 0) {
 					$file_names = array();
 					$price= array();
 					$intro= array();
-					$id= array();}
+					$id= array();
+					$discount=array();}
 	array_push($product_names,$row["product_name"]);
 	array_push($file_names,$row["file_name"]);
 	array_push($price,"$".$row["price"]);
 	array_push($intro,$row["intro"]);
 	array_push($id,$row["id"]);
+	array_push($discount,$row["discount"]);
 	$i++;
 	  }
 	} 

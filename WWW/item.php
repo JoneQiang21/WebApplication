@@ -278,7 +278,7 @@ function w3_close() {
 		<li >Sort : </li>
 		<li><a class="active" href=<?php echo $thisurl1."order=id&&page=1&session=1&" ?>>popular</a></li> |
 		<li><a href=<?php echo $thisurl1."order=date&page=1&session=1&" ?>>new </a></li> |
-		<li><a>discount</a></li> |
+		<li><a href=<?php echo $thisurl1."order=discount&page=1&session=1&" ?>>discount</a></li> |
 		<li><a href=<?php echo $thisurl1."order=price&page=1&session=1&"  ?>>price: Low High </a></li> |
 		<li><a href=<?php echo $thisurl1."order=priced&page=1&session=1&" ?>>price: High Low </a></li> 
 	</ul>
@@ -301,10 +301,9 @@ function w3_close() {
 		  <div class="grid1_of_4">
 				<div class="content_box"><a href="single.php?id='.$id[$x].'">
 					<div class="view view-fifth">
-						<img src="images/'.$file_names[$x].'"  class="img-responsive" alt=""/>
-				   	   	<div class="mask1">
-	                        <div class="info"> </div>
-			            </div>
+						<img src="images/'.$file_names[$x].'"  class="img-responsive" alt=""/>';
+		if ($discount[$x]==1){echo'<div class="mask1"><div class="info"></div></div>';}
+		echo'
 					</div>
 					</a>
 				    <h5><a href="single.php?id='.$id[$x].'">'.$product_names[$x].'</a></h5>

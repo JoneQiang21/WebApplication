@@ -100,7 +100,6 @@ function w3_close() {
 				<li><a href="#">trends</a></li>
 				<li><a href="item.php?sex=1&">men</a></li>
 				<li><a href="item.php?sex=0&">women</a></li>
-				<li><a href="#">kids</a></li>
 				<li><a href="item.php">all</a></li>
 			</ul>	
 		</div>
@@ -248,9 +247,9 @@ function w3_close() {
 							</div>
 						</div>
 					</div>
-					<li><a class="color4" href="about.html">About</a></li>				
-					<li><a class="color5" href="404.html">Blog</a></li>
-					<li><a class="color6" href="contact.html">Support</a></li>
+						<li><a class="color5" href="hot.php">Hot</a></li>
+						<li><a class="color4" href="about.html">About</a></li>				
+						<li><a class="color6" href="contact.html">Support</a></li>
 					</ul> 
 				</div>
 

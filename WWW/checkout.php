@@ -333,9 +333,9 @@ $conn->close();
 							</div>
 						</div>
 					</div>
-					<li><a class="color4" href="about.html">About</a></li>				
-					<li><a class="color5" href="404.html">Blog</a></li>
-					<li><a class="color6" href="contact.html">Support</a></li>
+						<li><a class="color5" href="hot.php">Hot</a></li>
+						<li><a class="color4" href="about.html">About</a></li>				
+						<li><a class="color6" href="contact.html">Support</a></li>
 					</ul> 
 				</div>
 

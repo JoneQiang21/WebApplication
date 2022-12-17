@@ -1,13 +1,14 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Single</title>
+<title>Product Detail</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
 	include_once("connproduct.php");
 	$thisurl='http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'];
 	$id=explode("id=",$thisurl)[1];
+	if ($id==null){header("Refresh:0;url='404.html'");}
 
 	$sql = "SELECT * FROM products WHERE (id ='".$id."')";
 	$result = $conn->query($sql);
@@ -214,9 +215,9 @@ function checkorder(){
 							</div>
 						</div>
 					</div>
-					<li><a class="color4" href="about.html">About</a></li>				
-					<li><a class="color5" href="404.html">Blog</a></li>
-					<li><a class="color6" href="contact.html">Support</a></li>
+						<li><a class="color5" href="hot.php">Hot</a></li>
+						<li><a class="color4" href="about.html">About</a></li>				
+						<li><a class="color6" href="contact.html">Support</a></li>
 					</ul> 
 				</div>
 

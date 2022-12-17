@@ -1,25 +1,110 @@
+
+<?php
+	include_once("connproduct.php");
+	$product_names=array();
+	$file_names=array();
+	$price=array();
+	$id=array();
+	$intro=array();
+	$sql = "SELECT * FROM products order by sales desc limit 4";
+	$result = $conn->query($sql);
+		while($row = mysqli_fetch_assoc($result)) {
+		array_push($product_names,$row["product_name"]);
+		array_push($file_names,$row["file_name"]);
+		array_push($price,$row["price"]);
+		array_push($id,$row["id"]);
+		array_push($intro,$row["intro"]);
+		  }
+	$conn->close();
+?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>About</title>
+<title>Hot Sales</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-
+	
+	
 <!-- Custom Theme files -->
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/etalage.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+
+<!-- Custom Theme files -->
 <!--webfont-->
 <link href='http://fonts.useso.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 
+<style>
+.w_content{
+	margin-top:40px;
+}
+.grid1_of_4 {
+	margin-bottom:10px;
+}
+.view .img-responsive{
+	 height:280px;
+	 width:auto;
+	 overflow: hidden;
+	 margin-top:13px;}
+</style>
+
+
+<script>
+function previouspage(){
+history.back();
+}
+</script>
+
+
 <!-- start menu -->
+<script src="js/jquery.easydropdown.js"></script>
 <link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+<script src="js/jquery.etalage.min.js"></script>
+<script>
+			jQuery(document).ready(function($){
+
+				$('#etalage').etalage({
+					thumb_image_width: 300,
+					thumb_image_height: 400,
+					source_image_width: 900,
+					source_image_height: 1200,
+					show_hint: true,
+					click_callback: function(image_anchor, instance_id){
+						alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+					}
+				});
+
+			});
+		</script>
+<!--initiate accordion-->
+<script type="text/javascript">
+	$(function() {
+	
+	    var menu_ul = $('.menu_drop > li > ul'),
+	           menu_a  = $('.menu_drop > li > a');
+	    
+	    menu_ul.hide();
+	
+	    menu_a.click(function(e) {
+	        e.preventDefault();
+	        if(!$(this).hasClass('active')) {
+	            menu_a.removeClass('active');
+	            menu_ul.filter(':visible').slideUp('normal');
+	            $(this).addClass('active').next().stop(true,true).slideDown('normal');
+	        } else {
+	            $(this).removeClass('active');
+	            $(this).next().stop(true,true).slideUp('normal');
+	        }
+	    });
+	
+	});
+</script>
 <script>$(document).ready(function(c) {
 	$('.alert-close').on('click', function(c){
 		$('.message').fadeOut('slow', function(c){
@@ -40,7 +125,7 @@
 
 
 <body>
-<div class="header_top">
+<div class="header_top ">
 		<ul>
 			<a href="login.html"><i style="position:fixed;right:2vw;z-index:3" class="material-icons w3-xxlarge">person</i></a>
 		</ul>
@@ -137,7 +222,7 @@
 					</ul>
 					<div class="search">
 					<form action='item.php' method='post'>
-						<input type="text" name="search" class="textbox"  placeholder='Search' />
+						<input type="text" name="search" class="textbox" value=<?php if($_SESSION['search']){echo $_SESSION['search'];}else{echo '""';}?> placeholder='Search'   />
 						<input type="submit" value="Subscribe" id="submit" name="submit"/>
 					</form>
 					</div>
@@ -146,90 +231,37 @@
  		</div>
 	</div>
 </div>
-
-
-
-<div class="single_top w3-pagepaddingindex">
-	 <div class="container w3-pagepaddingabout"> 
-	  <div class="box_4">
-	  	<div class="col-md-8 about_left">
-	  		<h1>Introduction of Our Shopping Website</h1>
-	        <img src="images/banner.jpg" class="img-responsive" alt=""/>
-				     
-		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-	       <div class="faqs">
-				       <h2>Why Choose Us</h2>
-				       <div class="questions">
-							<h3>1.What is Lorem Ipsum?</h3>
-	        				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-	        		   </div>
-			        		   <div class="questions">
-									<h3>2.What is Lorem Ipsum dummy text ever since the 1500s?</h3>
-			        				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-			        			</div>				    
-				   </div>  	
-	  	</div>
-	  	<div class="col-md-4 sidebar">
-	  		      <h2>Testimonials</h2>
-		  			    <div class="testimonials">
-		  					 <h3>Finibus Bonorum Malorum<span><a href="#">http://demolink.org</a></span></h3>
-		  					 <p><span class="quotes"></span>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.<span class="quotes-down"></span></p>
-		  				</div>	
-		  				<div class="testimonials">
-		  					 <h3>Finibus Bonorum <span><a href="#">http://demolink.org</a></span></h3>
-		  					 <p><span class="quotes"></span>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.<span class="quotes-down"></span></p>
-		  				</div>
-		  				<div class="testimonials">
-		  					 <h3>H. Rackham<span><a href="#">http://demolink.org</a></span></h3>
-		  					 <p><span class="quotes"></span>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.<span class="quotes-down"></span></p>
-		  				</div>
-		  			
-	  	</div>
-	</div>
 	
-	
-	<!-- related -->
-   <h3 class="m_2">Related Products</h3>
-         <div class="container">
-          		<div class="box_3 w3-row">
-          			<div class="col-md-3 w3-quarter">
-          				<div class="content_box"><a href="single.php?id=17">
-			   	          <img src="images/pic6.jpg" class="img-responsive" alt="">
-				   	   		</a>
-				   		</div>
-				    	<h4><a href="single.php?id=17">omni-Apple</a></h4>
-				    	<p>$ 57.8</p>
-			        </div>
-          			<div class="col-md-3 w3-quarter">
-          				<div class="content_box"><a href="single.php?id=7">
-			   	          <img src="images/pic2.jpg" class="img-responsive" alt="">
-				   	   </a>
-				    </div>
-				    <h4><a href="single.php?id=7">Orange core</a></h4>
-				    <p>$ 9.25</p>
-			        </div>
-          			<div class="col-md-3 w3-quarter">
-          				<div class="content_box"><a href="single.php?id=12">
-			   	          <img src="images/pic4.jpg" class="img-responsive" alt="">
-				   	   </a>
-				   </div>
-				    <h4><a href="single.php?id=12">Rambutan</a></h4>
-				    <p>$ 306.19</p>
-			        </div>
-          			<div class="col-md-3 w3-quarter">
-          				<div class="content_box"><a href="single.php?id=13">
-			   	          <img src="images/pic5.jpg" class="img-responsive" alt="">
-				   	   </a>
-				   </div>
-				    <h4><a href="single.php?id=13">ambi-Grjpe</a></h4>
-				    <p>$ 225.37</p>
-			        </div>
-          		</div>
-          	</div>
-       </div>
-</div>      
-
-
+<div class="w3-pagepaddingabout w3-margin-top" >
+	<h3 class="m_2">Popular Products</h3>
+		<div class="container">
+	        <div class="col-md-9 w_content w3-margin-top">
+				
+				<?php
+				$x=0;
+				for($x;$x<count($id);$x++){
+				if(($x+1)%4==1){echo '<div class="grids_of_4">';}
+				echo'
+				  <div class="grid1_of_4">
+						<div class="content_box"><a href="single.php?id='.$id[$x].'">
+							<div class="view view-fifth">
+								<img src="images/'.$file_names[$x].'"  class="img-responsive" alt=""/>';
+				if ($discount[$x]==1){echo'<div class="mask1"><div class="info"></div></div>';}
+				echo'
+							</div>
+							</a>
+						    <h5><a href="single.php?id='.$id[$x].'">'.$product_names[$x].'</a></h5>
+						    <h6>'.$intro[$x].'<h6>
+							'.$price[$x].'
+					   	</div>
+					</div>
+				';
+				if(($x+1)%4==0){echo '</div >';}}
+				if($x%4!=0){echo '</div >';}
+				$x=0;
+				?>
+			</div>
+		</div>
 
 <!-- footer -->
 <div class="w3-container w3-border-top">
@@ -245,8 +277,9 @@
               </dl>
            </address>
 		  </div>
-<div class="w3-half w3-container">
-<h3 style="margin-left:10vw">Support</h3>
+		  
+	<div class="w3-half w3-container">
+		<h3 style="margin-left:10vw">Support</h3>
 			<ul class="list_1 w3-center">
 				<li><a href="#">Terms & Conditions</a></li>
 				<li><a href="#">FAQ</a></li>
@@ -258,10 +291,10 @@
 				<li><a href="#">About Us</a></li>
 				<li><a href="#">Contact Us</a></li>
 			</ul>
-	  </div>
+	</div>
 </div>
 
-   <!-- copyrightr -->
+   <!-- copyright -->
 <div class="w3-container">
 	<div class="copy">
     <p>Copyright &copy; 2022.SUN SHUO     All rights reserved.</p>

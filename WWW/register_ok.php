@@ -10,7 +10,7 @@
 <body>
 	<?php
 	include_once("conn.php");
-	header("content-type:text/html; charest=UTF-8");//文件编码格式
+	header("content-type:text/html; charest=UTF-8");
 
 	
 	$fname=$_POST['fname'];
@@ -19,11 +19,11 @@
 	$password=$_POST['pwd'];
 
 	if(!($fname and $lname and $email and $password)){
-	echo("输入值不能为空");//判断变量名是否为空值
+	echo("Empty input!");
+	header("Refresh:3;url='register.html'");
 	
 }else{
 	
-	//判断用户是否已存在
 	$sql = "SELECT * FROM users WHERE (email='$email')";
 	$result = $conn->query($sql);
 
@@ -35,7 +35,7 @@
 		$sql = "INSERT INTO users (Firstname, Lastname, email,password)
 		VALUES ('".$fname."','".$lname."','".$email."','".$password."')";
  
-		$result = mysqli_query($conn,$sql);//承接结果集
+		$result = mysqli_query($conn,$sql);
 		
 		if($result){
 			echo"Nice!";

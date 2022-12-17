@@ -33,6 +33,8 @@ if(in_array($x,$quantity_id))
 
 $product_id=array();
 $size=array();
+
+
 include_once("conn.php");
 
 $sql = "SELECT * FROM cart WHERE customer_id=$userid order by cart_id";
@@ -49,9 +51,16 @@ mysqli_close($conn);
 
 include_once("connproduct.php");
 for($x = 0; $x < count($cart_id); $x++){
-$sql = "INSERT INTO orders (product_id, customer_id,quantity,size)
+	$sql = "INSERT INTO orders (product_id, customer_id,quantity,size)
 	VALUES ($product_id[$x],$userid,$quantity[$x],'$size[$x]')";
-	$result = mysqli_query($conn,$sql);}
+	$result = mysqli_query($conn,$sql);
+	$sql = "SELECT sales FROM products WHERE id=$product_id[$x]";
+	$result1 = $conn->query($sql);
+	while($row = mysqli_fetch_assoc($result1)){
+	$product_sales=$row["sales"]+$quantity[$x];}
+	$sql="UPDATE products SET sales = $product_sales WHERE id=$product_id[$x]";
+	$conn->query($sql);
+	}
 	if($result){echo "<script>alert('Your order has been placed')</script>";
 	header("Refresh:0;url='index.html'");}
 mysqli_close($conn);

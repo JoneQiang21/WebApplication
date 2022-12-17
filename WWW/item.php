@@ -275,7 +275,7 @@ function w3_close() {
 	<h4>Total - <span><?php echo $item_number;?> items</span> </h4>
 	<ul class="w_nav">
 		<li >Sort : </li>
-		<li><a class="active" href=<?php echo $thisurl1."order=id&&page=1&session=1&" ?>>popular</a></li> |
+		<li><a class="active" href=<?php echo $thisurl1."order=sales&&page=1&session=1&" ?>>popular</a></li> |
 		<li><a href=<?php echo $thisurl1."order=date&page=1&session=1&" ?>>new </a></li> |
 		<li><a href=<?php echo $thisurl1."order=discount&page=1&session=1&" ?>>discount</a></li> |
 		<li><a href=<?php echo $thisurl1."order=price&page=1&session=1&"  ?>>price: Low High </a></li> |

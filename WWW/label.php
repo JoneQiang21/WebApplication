@@ -57,6 +57,7 @@ else{$cat_query='';}
 
 if($sort==null){$sort='id';}
 else if($sort=='priced'){$sort='price desc';}
+else if($sort=='sales'){$sort='sales desc';}
 else if($sort=='discount'){$sort='discount desc';}
 
 if($page!=null){

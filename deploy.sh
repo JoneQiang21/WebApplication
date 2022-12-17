@@ -1,0 +1,1 @@
+sudo cp -r WWW/ /Applications/phpstudy/WWW/

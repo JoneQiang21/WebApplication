@@ -141,7 +141,7 @@ function checkorder(){
 		<div class="container">
 			<div class="header-bottom-left w3-row">
 				<div class="logo w3-col l3 m3 s3">
-					<h1><a href="index.html"><span>Buy</span>shop</a></h1>
+					<h1><a href="index.html"><span> Go</span>Shopping</a></h1>
 				</div>
 				<div class="w3-col l6 m6 s5" style="margin: auto">
 		    	  	<ul class="megamenu skyblue">

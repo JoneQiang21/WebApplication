@@ -274,7 +274,7 @@ function checkorder(){
 				<li class="head_desc"><a href="#">12 reviews</a><img src="images/review.png" alt=""/></li>
 			</ul>
 			<br>
-			<p style="display:block"><?php echo $product_intro?></p>
+			<p style="display:block;" class="product-detail-intro"><?php echo $product_intro?></p>
 			<div class="dropdown_top">
 			<form id="form" action=<?php echo "'addtocart.php?id=".$id."'" ?> method="post" onsubmit="return check;">
 				<div class="dropdown_left">

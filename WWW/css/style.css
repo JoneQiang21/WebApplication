@@ -1419,6 +1419,10 @@ ul.footer_social li a i:hover{
 	color:#999;
 	font-size:0.85em;
 	line-height:1.5em;
+	text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
 }
 .men_border{
 	  border-bottom: 1px solid #EFEFEF;
@@ -2640,7 +2644,7 @@ ul#etalage {
 	color:#575757;
 	font-size:0.7em;
 	text-indent:2em;
-	line-height:1.8em;
+	line-height:2em;
 	padding: 0 5px 9px 5px;
 	background-color:transparent;
 }
@@ -2718,7 +2722,7 @@ clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 	.count input{max-width:50px;height:23px;border:1px solid #aaa;color:#343434;text-align:center;padding:4px 0;background-color:#fff;z-index:2;}
 	.subtotal{width:150px;color:red;}
 	
-	.operation span:hover,a:hover{transition: 0.3s all;cursor:pointer;color:red;text-decoration:underline;}
+	.operation span:hover,a:hover{transition: 0.3s all;cursor:pointer;color:#6c63ff;text-decoration:underline;}
 	
 	.foot{padding-left: 2vw;margin-top:10px;color:#666;height:48px;background-color:#eaeaea;position:relative;z-index:8;font-size:0.3vw;}
 	.foot div, .foot a{line-height:48px;height:48px;}
@@ -2726,7 +2730,7 @@ clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 	.foot .select-all{width:10vw;height:48px;line-height:48px;color:#666;}
 	.foot .closing input[type="submit"] {
 		diaplay:inline-block;
-		background:#df1f26;
+		background:#6c63ff;
 		color: #FFF;
 		font-size: 0.8em;
 		padding: 0 3em;
@@ -2744,6 +2748,9 @@ clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 		background:#000;}
 
 	.fttotal{margin-right:2VW;}
-	.foot  #priceTotal, .foot #selectedTotal{color:red;font-family:"Microsoft Yahei";font-weight:bold;}
+	.foot  #priceTotal, .foot #selectedTotal{color:#6c63ff;font-family:"Microsoft Yahei";font-weight:bold;}
 	.foot .selected{margin-right:2VW;}
-	
+	.product-detail-intro:first-letter { 
+		font-size: 2em;
+		color: #6c63ff;
+	}

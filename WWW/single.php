@@ -16,6 +16,7 @@
 		$product_name=$row["product_name"];
 		$file_name=$row["file_name"];
 		$price=$row["price"];
+		$product_intro=$row["intro"];
 		$size=explode("/",$row["size"]);
 		  }
 	$conn->close();
@@ -273,7 +274,7 @@ function checkorder(){
 				<li class="head_desc"><a href="#">12 reviews</a><img src="images/review.png" alt=""/></li>
 			</ul>
 			<br>
-			<p style="display:block">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum</p>
+			<p style="display:block"><?php echo $product_intro?></p>
 			<div class="dropdown_top">
 			<form id="form" action=<?php echo "'addtocart.php?id=".$id."'" ?> method="post" onsubmit="return check;">
 				<div class="dropdown_left">
@@ -296,53 +297,6 @@ function checkorder(){
 			</form>
 		</div>
 	</div>
-			
-	<!-- socila icons -->
-	<div class="single_social_top w3-center">   
-          	  <ul class="single_social w3-cell-row">
-				  <li class="w3-cell"><a href="https://www.facebook.com/"> <i class="s_fb"> </i> <div class="social_desc w3-left-align">Share<br> on facebook</div><div class="clearfix"> </div></a></li>
-				  <li class="w3-cell"><a href="https://twitter.com/"> <i class="s_twt"> </i> <div class="social_desc w3-left-align">Tweet<br> this product</div><div class="clearfix"> </div></a></li>
-				  <li class="w3-cell"><a href="https://www.google.com/"> <i class="s_google"> </i><div class="social_desc w3-left-align">Google+<br> this product</div><div class="clearfix"> </div></a></li>
-				  <li class="w3-cell last"><a href="#"> <i class="s_email"> </i><div class="social_desc w3-left-align">Email<br> a Friend</div><div class="clearfix"> </div></a></li>
-			  </ul>
-	</div>
-
-	<!-- introduction-->
-	<ul class="menu_drop">
-		<li class="item1"><a href="#"><img src="images/product_arrow.png">Description</a>
-			<ul class="single">
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor </p>
-				<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore</p>
-				<p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes </p>
-			</ul>
-		</li>
-		<li class="item2"><a href="#"><img src="images/product_arrow.png">Additional information</a>
-			<ul class="single">
-				<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore</p>
-				<p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes </p>
-			</ul>
-		</li>
-		<li class="item3"><a href="#"><img src="images/product_arrow.png">Reviews (10)</a>
-			<ul class="single">
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor </p>
-				<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore</p>
-				<p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes </p>
-			</ul>
-		</li>
-		<li class="item4"><a href="#"><img src="images/product_arrow.png">Helpful Links</a>
-			<ul class="single">
-				<p> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore</p>
-				<p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes </p>
-			</ul>
-		</li>
-		<li class="item5"><a href="#"><img src="images/product_arrow.png">Make A Gift</a>
-			<ul class="single">
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor </p>
-				<p> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore</p>
-				<p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes </p>
-			</ul>
-		</li>
-	 </ul>
 
 	<!-- related-->
 	<h3 class="m_2">Related Products</h3>

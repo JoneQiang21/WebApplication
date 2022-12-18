@@ -2754,3 +2754,22 @@ clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 		font-size: 2em;
 		color: #6c63ff;
 	}
+	.log-container {
+		margin: 100px auto;
+		width: 800px;
+		text-align: center;
+	}
+	.log-container img {
+		display: block;
+		margin: auto;
+		height: 400px;
+    	width: auto;		
+	}
+	.log-container h3 {
+		font-size: 20px;
+	}
+	.log-container .user-name {
+		font-size: 30px;
+		color: #6c63ff;
+		line-height: 2;
+	}

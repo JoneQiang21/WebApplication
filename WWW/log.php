@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/style.css">
 <?php
     session_start();
     //判断uname和pwd是否赋值
@@ -18,7 +19,7 @@
         if ($result->num_rows > 0) {
             
             while($row = $result->fetch_assoc()) {
-				echo '<p> Welcome Back!<br/>' .$row['Firstname'].'  '.$row['Lastname'].'</p>';
+				echo '<div class="log-container"><img src="../images/log-banner.png"/><h3> Welcome Back!<h3/><p class="user-name">' .$row['Firstname'].'  '.$row['Lastname'].'</p></div>';
 				setcookie("username",$row['Id'], time() + 1200);
 				header("Refresh:3;url='checkout.php'");
             }

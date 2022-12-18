@@ -17,15 +17,14 @@
 		
         //判断结果集的记录数是否大于0
         if ($result->num_rows > 0) {
-            
             while($row = $result->fetch_assoc()) {
 				echo '<div class="log-container"><img src="../images/log-banner.png"/><h3> Welcome Back!<h3/><p class="user-name">' .$row['Firstname'].'  '.$row['Lastname'].'</p></div>';
 				setcookie("username",$row['Id'], time() + 1200);
 				header("Refresh:3;url='checkout.php'");
             }
         } else {
-            echo "Incorrect username or password! <br> Returning to Login page...";
-			header("Refresh:2;url='login.html'");
+            echo '<div class="log-container"><img src="../images/error.png"/><h3> Incorrect username or password! <br> Returning to Login page...<h3/></div>';
+			header("Refresh:2;url    ='login.html'");
         }
         $conn->close();  //关闭数据库     
     }
